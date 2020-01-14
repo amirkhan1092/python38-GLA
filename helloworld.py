@@ -21,5 +21,21 @@ print(k)
 # # rolling on the floor laughing
 # print("\U0001F923")
 
+# Using
+# CLDR
+# short
+# name:
+#
+# filter_none
+# brightness_4
 
-print(h)
+# grinning face
+print("\N{grinning face}")
+
+# slightly smiling face
+print("\N{slightly smiling face}")
+
+# winking face
+print("\N{winking face}")
+
+# print(h)
