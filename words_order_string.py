@@ -20,10 +20,13 @@ print(f'reverse string:> {k}')
 st = input('add paragraph ')
 
 ls = st.split()  # list of words
-p = []
+# p = []
+c = 0
 for k in ls:
-    p.append(k[::-1])
-out = ' '.join(p)
+    # p.append(k[::-1])
+    ls[c] =  k[::-1]
+    c += 1
+out = ' '.join(ls)
 print(f'original string:> {st}')
 print(f'reverse string:> {out}')
 
