@@ -33,10 +33,11 @@
 
 h = input('enter the string')
 ls = h.split()
-word_max = max(ls,key=len)
-word_min = min(ls,key=len)
-print(word_max)
-print(word_min)
+
+st = sorted(ls,key = len)
+
+print('word_max',st[-1])
+print('word_min',st[0])
 
 
 
