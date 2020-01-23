@@ -1,4 +1,4 @@
-intab = 'aeiou'
+intab = 'aaeoa'
 outab = '12345'
 
 trans = str.maketrans(intab, outab)
