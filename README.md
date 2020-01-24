@@ -6,7 +6,7 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 
 # Mid Term Exam content summery
 
-Data types object: [Int](http://amirkhan1092.c1.biz/integer.pdf), [float]((http://amirkhan1092.c1.biz/integer.pdf)), [complex]((http://amirkhan1092.c1.biz/integer.pdf)), [string(with methods)](http://www.amirkhan1092.c1.biz/string.pdf), list(with methods), tuple(with methods), 
+Data types object: [int](http://amirkhan1092.c1.biz/integer.pdf), [float](http://amirkhan1092.c1.biz/integer.pdf), [complex](http://amirkhan1092.c1.biz/integer.pdf), [string(with methods)](http://www.amirkhan1092.c1.biz/string.pdf), list(with methods), tuple(with methods), 
 dictionary(with methods), sets(with methods), bool, NoneType and functions (Built-in and UDF)
 
     
