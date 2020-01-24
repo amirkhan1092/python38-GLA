@@ -1,8 +1,8 @@
-intab = 'aaeoa'
-outab = '12345'
+intab = 'abcief'
+outab = '123456'
 
-trans = str.maketrans(intab, outab)
+trans = str.maketrans(intab,outab)
 
-st = 'this is python class'
-out = st.translate(trans)
+k = 'this is python class at 10:20 AM'
+out = k.translate(trans)
 print(out)
