@@ -5,10 +5,10 @@ ls = list()
 # init a list with single integer value
 ls = [10]
 #  output [10]
-st = '121221212122221212122'
+st = range(10)
 ls = list(st)
-print(st)
 print(ls)
+print(st)
 # output hello
 # output ['h', 'e', 'l', 'l', 'o']
 
@@ -21,7 +21,7 @@ print(d)
 # slicing
 # get the subsequence(sub list ) at given range
 ls = [1, 3, 65, 76, 'hello']
-d = ls[-1:40]
+d = ls[-3:-1:-2]
 print(d)
 # output [1, 3, 65, 76]
 # changeable
