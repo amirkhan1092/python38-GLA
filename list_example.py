@@ -1,5 +1,6 @@
 # initialize the list (empty list)
-ls = []
+ls1 = []
+
 ls = list()
 # output []
 # init a list with single integer value
@@ -28,4 +29,42 @@ print(d)
 ls = [2, 5, 4, 43]
 ls[0] = 'hello'
 print(ls)
+
+# method in a list
+# append add element in list
+ls1 = []
+ls1.append([2,4,5,7])
+ls1.append((10,))
+ls1.append(23)
+# print(ls1, len(ls1))
+# extend ....append iterable values in a list individual
+ls1.extend([2, 4, 7, 6])
+print(ls1, len(ls1))
+
+# remove the elements from list
+ls = [2, 4, 7, 8]
+# item deletion
+del ls[0]
+print(ls)
+
+# remove
+ls = [2, 6, 87]
+ls.remove(ls[0])
+print(ls)
+
+# pop
+ls = [3, 6, 8]
+k = ls.pop()
+k = ls.pop(0)
+k = ls.pop()
+print('item removed ',k)
+print(ls)
+
+
+
+
+
+
+
+
 
