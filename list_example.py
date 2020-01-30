@@ -128,13 +128,8 @@ print(k)
 ls = [2, 'hello', 'Hi', 'Python', 23, 2]
 
 
-n = ls.count(2)
-k1 = -1
-for i in range(n):
-    k1 = ls.index(2,k1+1)
-    print(k1)
 
-k = ls.index()
+ls.count(2)
 print(k)  # output 5
 
 # count
