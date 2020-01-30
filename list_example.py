@@ -95,41 +95,47 @@ d[-1] = 'hello'
 print(d)
 print(ls)
 
-# sorting with number ,
+# sorting with number
 ls = [2, 6, 43, 0, 23]
-ls.sort()
-print(ls)
 ls.sort(reverse=True)
 print(ls)
 
 # sorting with string ascii
-ls = ['ravi','akash','aNjali','Zebra','tarun']
+ls = ['rAvi','akash','aNjali','Zebra','tarun']
 ls.sort()
 print(ls)
-# output ['Tarun', 'Zebra', 'aNjali', 'akash', 'ravi']
+# ['akash', 'anjali', 'ravi', 'tarun', 'zebra']
 
 # sorting with function
 ls = ['ravi',['akash','aNjali'],'Zebra','Tarun']
-ls.sort(key = len)
+ls.sort(key=len)
 print(ls)
 # [['akash', 'aNjali'], 'ravi', 'Zebra', 'Tarun']
 
-
 # sorting with string max char in length
-ls = ['ravi','akash','aNjali','Zebra','Tarun']
+ls = ['ravi','akash','aNjali','Zebra','Tarun','aa','AA']
 ls.sort(key=max)
 print(ls)
 # ['aNjali', 'Zebra', 'akash', 'Tarun', 'ravi']
 
 # reverse
 ls = [2, 'hello', 'Hi', 'Python', 23]
+# ls = ls[::-1]
 ls.reverse()
-print(ls)
+print(k)
 
 # index
 ls = [2, 'hello', 'Hi', 'Python', 23, 2]
-k = ls.index(2)
-print(k)
+
+
+n = ls.count(2)
+k1 = -1
+for i in range(n):
+    k1 = ls.index(2,k1+1)
+    print(k1)
+
+k = ls.index()
+print(k)  # output 5
 
 # count
 ls = [2, 'hello', 'Hi', 'Python', 23, 'Hi']
