@@ -125,7 +125,17 @@ ls.reverse()
 print(k)
 
 # index
-ls = [2, 'hello', 'Hi', 'Python', 23, 2]
+ls = [1, 2, 'hello', 'Hi', 'Python', 23, 2]
+
+element = 2
+k = 0
+c = ls.count(element)
+print('number of elements ', c)
+for i in range(c):
+    k = ls.index(element,k+1)
+    print('position ', k)
+
+
 
 
 
@@ -136,3 +146,16 @@ print(k)  # output 5
 ls = [2, 'hello', 'Hi', 'Python', 23, 'Hi']
 k = ls.count('Hi')
 print(k)
+
+
+# copy
+ls = [2, 33, 'hello']
+d = ls.copy()
+
+print(id(ls))
+print(id(d))
+
+
+
+
+
