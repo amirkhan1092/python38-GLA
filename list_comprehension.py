@@ -1,16 +1,26 @@
-a = [1, 2, 3, 43, 4, 23, 12, 3, 2, 8, 6]
+a = [1, 32, 5, 7, 54, 76, 22]
 # b = []
 # for i in a:
 #     if i%2 == 0:
 #         b.append(i)
-
 b = [i for i in a if i % 2 == 0]
-
 print(b)
 print(a)
 
+
+k = ['33', '34', '12', '9']
+b = map(int, k)
+
+for i in b:
+    print(next(b))
+    print(list(b))
+
+
+
+
+
 b = ['ravi kumar', 'chandan thakur', 'mohan rajput', 'abhay kumar']
-lst = [i.replace('kumar','singh') for i in b if i.endswith('kumar')]
+lst = [i.upper() for i in b if i.split()[-1] == 'kumar']
 print(lst)
 print(b)
 
@@ -26,8 +36,8 @@ lst = [int(i) for i in k]
 
 
 
-a, t = [2, 4]
-print(a, type(a))
+a = [343]
+print(a)
 
 
 
