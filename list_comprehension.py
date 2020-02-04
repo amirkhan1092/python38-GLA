@@ -8,12 +8,27 @@ print(b)
 print(a)
 
 
-k = ['33', '34', '12', '9']
-b = map(int, k)
+k = ['33.0', '34', '12']
+gen = map(eval, k)
 
-for i in b:
-    print(next(b))
-    print(list(b))
+first = list(gen)
+
+for i in gen:
+    print(i)
+second = next(gen)
+
+
+k = ['33.0', '34', '12']
+gen = map(eval, k)
+
+y = a, b, c = gen
+print(y)
+
+def apnafun(k):
+    return k+2
+
+l = [2, 45, 6]
+k = list(map(apnafun, l))
 
 
 
