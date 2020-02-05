@@ -53,6 +53,39 @@ lst = [int(i) for i in k]
 
 a = [343]
 print(a)
+# using range only
+a1 = list(range(1, 1001))
+
+# append
+a2 = []
+for i in range(1, 1001):
+    a2.append(i)
+
+# concat
+a3 = []
+for i in range(1, 1001):
+    a3 += [i]
+
+# list comprehension
+a4 = [i for i in range(1, 1001)]
+print(a4)
+
+
+# using typecasting
+a1 = range(1,1001)
+print(a1)
+# using append
+a2 = []
+for i in range(1, 1001):
+    a2.append(i)
+
+# list comprehension
+a3 = [i for i in range(1, 1001)]
+
+# concat
+a4 = []
+for i in range(1, 1001):
+    a4 += [i]
 
 
 
@@ -68,3 +101,13 @@ print(a)
 # b = [int(i) for i in a]
 # print(a)
 # print(b)
+
+
+a = ['43', '3', '21']
+km = map(int, a)
+
+for i in km:
+    print(i)
+    o = list(km)
+
+
