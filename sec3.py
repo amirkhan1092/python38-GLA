@@ -49,5 +49,76 @@ out = k.split()
 
 print(out, type(out))
 
+# capitalize()
+k = '2hello world'
+out = k.capitalize()
+print(out)
+
+# upper
+k = '2hello world'
+out = k.upper()
+print(out)
+# output 2HELLO WORLD
+
+# lower
+k = '2Hello world'
+out = k.lower()
+print(out)
+# output 2hello world
+
+
+
+
+
+# center
+k = 'hello6'
+out = k.center(11, '*')
+print(out)
+# output hello*****
+
+# rjust
+k = 'hello'
+out = k.rjust(10, '*')
+print(out)
+
+
+# rjust
+k = 'hello'
+out = k.ljust(10, '*')
+print(out)
+
+
+# zfill
+k = '-12232'
+out = k.zfill(10)
+print(out)
+# output -000012232
+
+
+# encode
+k = 'helloϪ'
+out = k.encode('utf', errors='replace')
+print(out, type(out))
+
+out2 = out.decode('utf')
+print(out2, type(out2))
+
+
+# maketrans, translate
+
+k = 'hello world'
+intab = 'abcdef'
+outab = '123456'
+trans = str.maketrans(intab, outab)
+
+out = k.translate(trans)
+print(out)
+
+
+
+
+
+
+
 
 
