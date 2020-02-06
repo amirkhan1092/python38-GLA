@@ -5,6 +5,7 @@ print(t, type(t))  # () <class 'tuple'>
 
 # init tuple with single object
 t = (10,)
+t = ((2,),)
 t = 10,
 print(t, type(t))  # (10,) <class 'tuple'>
 
@@ -36,11 +37,12 @@ print(t)
 
 # list in tuple
 t = (2, 43, 'hello', [2, 43])
-t[-1].append('Hi')  # list can add or remove the elements without changing there id in namespace
+t[-1].append('Hi')  # list can add or remove the elements
+# without changing there id in namespace
 t[-1].clear()
 print(t)  # (2, 43, 'hello', [])
 
-# tuple creation with multiple elements number
+# tuple creation with multiple elements numbers
 # using tuple constructor or typecast
 a1 = tuple(range(1, 10))
 print(a1, type(a1))  # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'tuple'>
@@ -55,9 +57,10 @@ print(a2, type(a2))  # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'tuple'>
 # tuple generator (iterator)
 a3 = (i for i in range(1, 10))
 print(a3, type(a3))  # <generator object <genexpr> at 0x0E324F30> <class 'generator'>
-# A generator is a special kind of iterator, which stores the instructions for how to generate each
-# of its members, in order, along with its current state of iterations.
-# It generates each member, one at a time, only as it is requested via iteration.
+# A generator is a special kind of iterator, which stores the instructions for
+# how to generate each of its members, in order, along with its current state
+# of iterations. It generates each member, one at a time, only as it is
+# requested via iteration.
 
 tp = tuple(a3)  # gen to tuple type
 print(tp, type(tp))  # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'tuple'>
@@ -66,12 +69,12 @@ print(tp, type(tp))  # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'tuple'>
 # tuple other operation
 
 # membership
-t = (2, 4, 6, 89, 1)
+t = (2, 4, 6, 89, [1, 4])
 item = 1
 out = item in t
 print(out)  # True
 item = 100
-out = item in t
+out = item  in t
 print(out)  # False
 
 # multiplication with number
@@ -83,6 +86,7 @@ out = t*0
 print(out, type(out))  # () <class 'tuple'>
 
 # Addition (concat)
+
 t1 = (2, 4)
 t2 = (4, 8)
 t = t1 + t2

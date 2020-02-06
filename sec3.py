@@ -116,6 +116,60 @@ print(out)
 
 
 
+# list
+# list creation
+a = []  # list format
+a = list()  # using constructor
+print(a)  # []
+
+# init a list with single object
+a1 = [10]
+a2 = ['hello']
+a3 = [[3,4]]
+
+
+# accessing the elements
+#     1. indexing : value at given position
+
+k = [2, 43, 'hello', 1+3J]
+d = k[-1]
+print(d, type(d))  # (1+3j) <class 'complex'>
+
+#       2. slicing: values at given range
+k = [2, 43, 'hello', 1+3J]
+d = k[10:1:-1]
+print(d, type(d))
+
+
+# other operation
+# membership operator
+ls = [2, 4, 5]
+i = 3
+out = i in ls
+print(out)  # False
+out = i not in ls
+print(out)  # True
+
+# concat
+l1 = [2, 5]
+l2 = [3]
+l = l1 + l2
+
+print(id(l))
+l += [10, 11]
+print(id(l))
+
+print(l, type(l))  # [2, 5, 3, 8] <class 'list'>
+
+
+# multiplication
+ls = [2, 5]
+out = ls*2
+print(out)
+
+# methods in list
+
+
 
 
 

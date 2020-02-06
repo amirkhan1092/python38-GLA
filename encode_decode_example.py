@@ -1,5 +1,9 @@
-k = 'hello worldϪ'
-out = k.encode('ascii',errors='replace')
-print(k)
+k = 'hello python world🤣'
+out = k.encode('utf', errors='replace')
 print(out)
+
+
+
 print(out.decode('utf'))
+
+
