@@ -127,11 +127,30 @@ print(out)  # 0
 
 # colon
 import copy
-h = (2, 3, 8, [])
-k = copy.deepcopy(h)
-h[-1].append(100)
-print(h[-1], id(h[-1]))
-print(k[-1], id(k[-1]))
+d = [2, 4, [7]]
+t = copy.deepcopy(d)
+t[-1].append(100)
+print(t)
+print(d)
+
+u = [2, 4, [4]]
+y = str(u)
+t = eval(y)
+p--rint(t, type(t))
+
+
+h = range(1, 101)
+even = []
+odd = []
+for i in h:
+    if i%2 == 0:
+        even.append(i)
+    else:
+        odd.append(i)
+print(odd)
+
+# print(d[-1] is t[-1])
+
 
 
 # deepcopy using raw data
@@ -141,15 +160,11 @@ raw_data = str(k)
 print(raw_data, type(raw_data))
 
 lst = eval(raw_data)
-
-
-
-lst =  [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
+lst = [(10, 20, 40), (40, 50, 60), (70, 80, 90)]
 for i in range(len(lst)):
     tt = list(lst[i])
     tt[-1] = 100
     tt = tuple(tt)
     lst[i] = tt
 print(lst)
-
 
