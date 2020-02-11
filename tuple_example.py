@@ -4,10 +4,12 @@ t = tuple()  # constructor
 print(t, type(t))  # () <class 'tuple'>
 
 # init tuple with single object
-t = (10,)
+t = (9,)
+a = 10,
+print(a, type(a))
+
 t = ((2,),)
-t = 10,
-print(t, type(t))  # (10,) <class 'tuple'>
+print(t, type(t))  # ((2,),) <class 'tuple'>
 
 # tuple operation
 # accessing the elements
@@ -18,13 +20,13 @@ print(d, type(d))  # 43 <class 'int'>
 
 #     2. slicing : elements at given range
 t = (2, 43, 'hello', [2, 43])
-d = t[1:3]
+d = t[-1:2:-1]
 print(d, type(d))  # (43, 'hello') <class 'tuple'>
 
 
 # item assignment
 t = (2, 43, 'hello', [2, 43])
-t[0] = 'hello'  # TypeError: 'tuple' object does not support item assignment
+t[-1] = 'hello'  # TypeError: 'tuple' object does not support item assignment
 print(t)
 # output error
 
@@ -38,6 +40,7 @@ print(t)
 # list in tuple
 t = (2, 43, 'hello', [2, 43])
 t[-1].append('Hi')  # list can add or remove the elements
+print(t)
 # without changing there id in namespace
 t[-1].clear()
 print(t)  # (2, 43, 'hello', [])
