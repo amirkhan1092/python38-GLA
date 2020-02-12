@@ -1,11 +1,27 @@
 a = [1, 32, 5, 7, 54, 76, 22]
-# b = []
-# for i in a:
-#     if i%2 == 0:
-#         b.append(i)
-b = [i for i in a if i % 2 == 0]
+b = [1.8*i+32 for i in a]
 print(b)
-print(a)
+
+lt = []
+
+lst = ['34', '21', '4', '76']
+b = [int(i) for i in lst]
+bm = map(int, lst)
+print(b)
+print(bm)
+
+lst = ['34', '21', '4', '76', '43']
+bm = list(map(int, lst))
+
+k = next(bm)
+for i in bm:
+    u = list(bm)
+    print(i)
+
+
+1,3,9,12,15,20,28,32,33,36,38,48,50,53,54
+
+
 
 
 k = ['33.0', '34', '12']
