@@ -17,6 +17,20 @@ vs = 'hello python'
 for i in vs:
     print(i)
 
+for i in vs:
+    if i == ' ':
+        break
+    print(i)
+
+#The break statement, breaks out of the innermost enclosing for or while loop
+# break just stop the iteration within the loop
+
+
+
+#The continue statement, continues with the next iteration of the loop:
+
+
+
 
 
 
