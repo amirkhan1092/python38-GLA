@@ -98,7 +98,6 @@ print(D1)  # {'Name': 'Ravi', 'Section': 'O', 'Rolln': 30, 'CPI': 9.0}
 # setdefault()
 
 D1 = {'Name':'Sachin', 'Section':'O', 'Rolln':30}
-
 D1.setdefault('rolln', 41)
 
 print(D1)

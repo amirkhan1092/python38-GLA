@@ -168,6 +168,38 @@ out = ls*2
 print(out)
 
 # methods in list
+ip = '32 454 8 6'
+dp = ip.split()
+gen = map(int, dp)
+k = list(gen)  # space separated elements
+
+def apnafun(u):
+    return u-1
+
+
+lst = [2, 4, 6, 9]
+gen = list(map(apnafun, lst))
+print(gen)
+
+out = [i-1 for i in lst]
+
+
+for i in range(10):
+    print(i, end='*\n*')
+
+a = 10
+b = 20
+c = a + b
+k = [20, 4, 7]
+print(a,"B    ", sep='*')
+
+k = 0b1010
+print(k)
+
+
+
+
+
 
 
 
