@@ -39,7 +39,9 @@ print("\N{slightly smiling face}")
 print("\N{winking face}")
 
 # print(h)
-
-
 #
+a = 10
+h = 'result is %d'%(a)
+h = f'result is {a}'
+h = 'result is {}'. format(a)
 
