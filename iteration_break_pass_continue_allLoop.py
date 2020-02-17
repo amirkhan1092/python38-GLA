@@ -16,11 +16,14 @@ For example :
 vs = 'hello python'
 for i in vs:
     print(i)
-
+vs = 'hello python'
 for i in vs:
     if i == ' ':
         break
     print(i)
+else:
+    print('loop complete ')
+
 
 #The break statement, breaks out of the innermost enclosing for or while loop
 # break just stop the iteration within the loop
@@ -28,6 +31,42 @@ for i in vs:
 
 
 #The continue statement, continues with the next iteration of the loop:
+
+
+
+for i in range(10):
+    print('single ',i)
+    if i > 5:
+        continue
+    print('with expression', 2*i+2)
+else:
+    print('loop completed ')
+
+
+# pass : pass just a keyword. it pass the instruction (do nothing). use to maintain the scope
+def fun(r):
+    pass
+
+h = fun(34)
+
+while 1:
+    pass
+
+
+for i in range(10):
+    if i == 2:
+        pass
+    else:
+        print(i**2)
+
+
+
+
+
+
+
+
+
 
 
 

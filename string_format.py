@@ -10,9 +10,24 @@ a = 10
 b = 30
 c = a + b
 f = f'result is {c} of {a} {b}'
-f = 'result is {} of {} {}'.format(c, a, b)
+print(f)  # result is 40 of 10 30
+
+
+
+dh = 'result is {} of {} {}'
+f = dh.format(c, a, b)
+print(f)  # result is 40 of 10 30
+
+
+
+
 f = 'result is %d of %d %d' % (c, a, b)
 print(f)
+
+
+
+
+
 
 k = 'my name is and my record is {0:10d}'.format(2)
 print(k)
