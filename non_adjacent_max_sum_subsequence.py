@@ -1,6 +1,8 @@
-a = 10
-b = 20
-# 0, '', [], (), {}, set(), False, None
-out = a > b and 'shalini'
+lst = [3, 0, 2, 8]
 
-print(out)
+# 0, '', [], (), {}, set(), False, None
+exe = 0
+inc = 0
+for i in lst:
+    inc, exe = max(inc, exe), exe + i
+print(max(inc, exe))

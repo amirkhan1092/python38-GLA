@@ -1,5 +1,7 @@
 
 # Python Loop
+from list_comprehension import l
+
 1
 # 1. for loop
 '''
@@ -58,8 +60,8 @@ for i in range(10):
         print(i**2)
 
 
-def abcd(a, l=[]):
+def abcd(a, ll=[]):
     for i in range(a):
-        l.append(i*i)
-    print(l)
-
+        ll.append(i*i)
+from list_comprehension import l
+print(l)
