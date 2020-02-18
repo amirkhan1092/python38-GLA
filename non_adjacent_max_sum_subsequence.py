@@ -1,5 +1,4 @@
 lst = [3, 0, 2, 8]
-
 # 0, '', [], (), {}, set(), False, None
 exe = 0
 inc = 0

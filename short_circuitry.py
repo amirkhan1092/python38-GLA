@@ -115,10 +115,15 @@ f = f'{a}   {b}     {out_xor}'
 
 
 
+# s = (1, 'hello world', 'mandeep sir jindabaad')
 
-
-
-
+tt = (1, [10, 20, 30], [30, 50, 53, [10, 3], [3, [10, 20]]], False, 10)
+ele = 10
+s = tt.count(ele)
+for i in tt:
+    if type(i) == list or type(i) == tuple:
+        s += i.count(ele)
+print('the element present in entire tuple ', s)
 
 
 
