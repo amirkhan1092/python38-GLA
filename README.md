@@ -7,7 +7,8 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 # Mid Term Exam content summery
 
 Data types object: [int(click here)](http://amirkhan1092.c1.biz/integer.pdf), [float](http://amirkhan1092.c1.biz/integer.pdf), [complex](http://amirkhan1092.c1.biz/integer.pdf), [string(click here)](http://www.amirkhan1092.c1.biz/string.pdf), [list(click here)](http://www.amirkhan1092.c1.biz/list.pdf) , [tuple(click here)](http://www.amirkhan1092.c1.biz/tuple.pdf), 
-dictionary(with methods), sets(with methods), bool, NoneType and functions (Built-in and UDF)
+dictionary(with methods), sets(with methods), bool, NoneType and functions (Built-in and UDF), Short Circuiting elementry in Python,
+Ternary Operator in Python(ternary feature). 
 
     
 ![image](https://user-images.githubusercontent.com/15958589/72918999-a8719600-3d6c-11ea-8270-7f2362843855.png)
