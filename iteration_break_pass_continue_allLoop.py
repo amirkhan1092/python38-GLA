@@ -32,8 +32,6 @@ else:
 
 #The continue statement, continues with the next iteration of the loop:
 
-
-
 for i in range(10):
     print('single ',i)
     if i > 5:
@@ -60,21 +58,8 @@ for i in range(10):
         print(i**2)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def abcd(a, l=[]):
+    for i in range(a):
+        l.append(i*i)
+    print(l)
 

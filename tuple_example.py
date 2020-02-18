@@ -4,8 +4,8 @@ t = tuple()  # constructor
 print(t, type(t))  # () <class 'tuple'>
 
 # init tuple with single object
-t = (9,)
-a = 10,
+t = (20,)
+a = 20,
 print(a, type(a))
 
 t = ((2,),)
@@ -20,7 +20,7 @@ print(d, type(d))  # 43 <class 'int'>
 
 #     2. slicing : elements at given range
 t = (2, 43, 'hello', [2, 43])
-d = t[-1:2:-1]
+d = t[11:1:-2]  # (43, 'hello')
 print(d, type(d))  # (43, 'hello') <class 'tuple'>
 
 

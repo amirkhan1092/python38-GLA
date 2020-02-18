@@ -8,9 +8,15 @@ This method lets us concatenate elements within a string through positional form
 a = 10
 b = 30
 c = a + b
-temp = "result is {} of {} and {}"
-f = temp.format(c, a, b)
-print(f)  # result is 40 of 10 and 30
+temp = 'result is %d of %d and %d'
+f = temp % (c, a, b)
+print(f)
+
+
+
+
+
+
 
 # tag f format
 a = 10
@@ -38,5 +44,5 @@ print(f)
 
 
 
-k = 'my name is and my record is {0:10d}'.format(2)
+k = 'my name is  and my record is {:10d}'.format(22223)
 print(k)
