@@ -15,6 +15,7 @@ while 1:
 
 
 print(ele)
+
 # sns.scatterplot(
 #     x='mean area',
 #     y='mean compactness',

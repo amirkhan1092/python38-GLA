@@ -1,5 +1,7 @@
 
 # Python Loop
+import time
+
 from list_comprehension import l
 
 1
@@ -14,17 +16,22 @@ Python’s for statement iterates over the items of any sequence
 For example :
 
 '''
-
-vs = 'hello python'
+import time
+vs = ['hello',  'python', '', '😒']
+c = 0
 for i in vs:
+    if i == '❤ ':
+        print(i)
+        continue
+    else:
+        print('not a heart')
     print(i)
-vs = 'hello python'
-for i in vs:
-    if i == ' ':
-        break
-    print(i)
+    print('iteration ', c)
+    c += 1
 else:
-    print('loop complete ')
+    print('loop complete')
+
+
 
 
 #The break statement, breaks out of the innermost enclosing for or while loop
@@ -39,6 +46,7 @@ for i in range(10):
     if i > 5:
         continue
     print('with expression', 2*i+2)
+
 else:
     print('loop completed ')
 
@@ -55,7 +63,7 @@ while 1:
 
 for i in range(10):
     if i == 2:
-        pass
+        pas[s
     else:
         print(i**2)
 

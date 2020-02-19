@@ -1,4 +1,32 @@
+def add(a):
+    if a % 2 == 0:
+        return a - 2
+    else:
+        return a-1
+
+lst = [1, 2, 4, 7, 9, 34, 23]
+out = [add(i) for i in lst if i]
+print(out)
+out = map(add, lst)
+
+lst = [1,2,3,65,45]
+out = [i**2 for i in lst if i%2==0]
+print(out)
+
+h = [(), '', 'hello', [33], (), '3']
+
+lst = [i for i in h if i]
+
+
+
+
+
+
+
 a = [1, 32, 5, 7, 54, 76, 22]
+
+
+
 b = [1.8*i+32 for i in a]
 print(b)
 

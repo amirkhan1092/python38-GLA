@@ -26,9 +26,10 @@ print(d, type(d))  # (43, 'hello') <class 'tuple'>
 
 # item assignment
 t = (2, 43, 'hello', [2, 43])
-t[-1] = 'hello'  # TypeError: 'tuple' object does not support item assignment
+t[0] = 0  # TypeError: 'tuple' object does not support item assignment
 print(t)
 # output error
+
 
 # item deletion
 t = (2, 43, 'hello', [2, 43])
