@@ -73,7 +73,7 @@ print(tp, type(tp))  # (1, 2, 3, 4, 5, 6, 7, 8, 9) <class 'tuple'>
 # tuple other operation
 
 # membership
-t = (2, 4, 6, 89, [1, 4])
+t = (1, 2, 4, 6, 89, [1, 4])
 item = 1
 out = item in t
 print(out)  # True
@@ -140,7 +140,7 @@ print(d)
 u = [2, 4, [4]]
 y = str(u)
 t = eval(y)
-p--rint(t, type(t))
+print(t, type(t))
 
 
 h = range(1, 101)
@@ -172,3 +172,19 @@ for i in range(len(lst)):
     lst[i] = tt
 print(lst)
 
+
+k = 'hello  world'
+pos = k.find('❤')
+print(pos)
+
+hello = 'nahi'
+nahi = None
+k= nahi
+print(k)
+
+import itertools
+h = [1, 1, 1, 2, 2, 2, 3, 4, 4, 4]
+for k, g in itertools.groupby(h):
+    valdict = (k, len(list(g)))
+
+    print(valdict)

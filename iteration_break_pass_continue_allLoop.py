@@ -1,8 +1,8 @@
 
 # Python Loop
-import time
 
-from list_comprehension import l
+
+
 
 1
 # 1. for loop
@@ -16,20 +16,15 @@ Python’s for statement iterates over the items of any sequence
 For example :
 
 '''
-import time
-vs = ['hello',  'python', '', '😒']
-c = 0
+vs = ['hello', 'world', 'hi']
 for i in vs:
-    if i == '❤ ':
-        print(i)
-        continue
-    else:
-        print('not a heart')
     print(i)
-    print('iteration ', c)
-    c += 1
+    vs= 'Hi'
 else:
-    print('loop complete')
+    print('loop complete ')
+
+
+
 
 
 
@@ -63,7 +58,7 @@ while 1:
 
 for i in range(10):
     if i == 2:
-        pas[s
+        pass
     else:
         print(i**2)
 
@@ -73,3 +68,22 @@ def abcd(a, ll=[]):
         ll.append(i*i)
 from list_comprehension import l
 print(l)
+
+
+
+
+def apna_fun(t):
+    for i in range(2, t):
+        if t % i == 0:
+            return 10
+    else:
+            return 0
+
+L = [2, 4, 76, 23, 7, 23, 76, 3, 11, 17, 19]
+L.sort(key=apna_fun)
+print(L)
+
+L = ['surabhi', 'akansha', 'neha', 'sneha']
+L.sort(key=len)
+print(L)
+
