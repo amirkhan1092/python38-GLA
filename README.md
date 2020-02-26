@@ -13,6 +13,10 @@ Ternary Operator in Python(ternary feature).
 # Sample paper for Mid-term Examination  
 Sample paper1 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper1.pdf)           
 Sample paper2 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper2.pdf)
+
+```
+Python3 in one picture with all data types 
+```
     
 ![image](https://user-images.githubusercontent.com/15958589/72918999-a8719600-3d6c-11ea-8270-7f2362843855.png)
 ![image](https://user-images.githubusercontent.com/15958589/72919090-da82f800-3d6c-11ea-8dff-836c9bd368ec.png)
