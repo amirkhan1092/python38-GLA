@@ -10,6 +10,9 @@ Data types object: [int(click here)](http://amirkhan1092.c1.biz/integer.pdf), [f
 dictionary(with methods), sets(with methods), bool, NoneType and functions (Built-in and UDF), Short Circuiting elementry in Python,
 Ternary Operator in Python(ternary feature). 
 
+# sample papers for Mid-term 
+[sample paper1](http://amirkhan1092.c1.biz/sample-paper1.pdf)
+[sample paper2](http://amirkhan1092.c1.biz/sample-paper2.pdf)
     
 ![image](https://user-images.githubusercontent.com/15958589/72918999-a8719600-3d6c-11ea-8270-7f2362843855.png)
 ![image](https://user-images.githubusercontent.com/15958589/72919090-da82f800-3d6c-11ea-8dff-836c9bd368ec.png)
