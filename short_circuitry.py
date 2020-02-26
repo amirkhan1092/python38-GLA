@@ -1,8 +1,23 @@
-
+# tipic: Short circuit elementary
 '''
+
+
+
 False Evaluate Quantity
 0, None, '', [], (), {}, set(), False
 '''
+
+
+
+ab = 1
+tr = True
+
+out = 'ab' if ab is tr else 'tr' and 'ab'
+print(eval(out))
+
+s = ('101' or 'trf') +'1'
+out = int(s, 2)
+print(out)
 
 # and
 out = 'abc' and None

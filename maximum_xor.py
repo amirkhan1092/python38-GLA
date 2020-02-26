@@ -6,5 +6,3 @@ for i in range(ln):
         mx = max(mx, k[i] & k[j])
 
 print(mx)
-
-print('⛱')
