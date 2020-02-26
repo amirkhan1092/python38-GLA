@@ -1,7 +1,5 @@
-# tipic: Short circuit elementary
+# topic: Short circuit elementary
 '''
-
-
 
 False Evaluate Quantity
 0, None, '', [], (), {}, set(), False
@@ -10,9 +8,9 @@ False Evaluate Quantity
 
 
 ab = 1
-tr = True
+tr = 'True'
 
-out = 'ab' if ab is tr else 'tr' and 'ab'
+out = 'ab' if ab == tr else 'tr' and 'ab'
 print(eval(out))
 
 s = ('101' or 'trf') +'1'
@@ -62,7 +60,6 @@ out = zip(l1, l2)
 
 
 
-out = [(2, 4), (6, 8), (8, 1), (2, 0)]
 
 
 l1= [out[i][0] for i in range(len(out))]
