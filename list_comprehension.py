@@ -154,4 +154,21 @@ for i in km:
     print(i)
     o = list(km)
 
+# traverse two list simultaneously
+# 1list comprehension
+L1 = [2, 4, 5, 8]
+L2 = [3, 6, 2, 1]
+L = [[L1[i], L2[i]] for i in range(len(L1))]
 
+for i, j in L:
+    print('elements from list 1', i)
+    print('elements from list 2', j)
+
+# using append
+L1 = [2, 4, 5, 8]
+L2 = [3, 6, 2, 1]
+L = []
+for i in range(len(L1)):L.append([L1[i], L2[i]])
+for i, j in L:
+    print('elements from list 1', i)
+    print('elements from list 2', j)
