@@ -35,12 +35,10 @@ dh = 'result is {} of {} {}'
 f = dh.format(c, a, b)
 print(f)  # result is 40 of 10 30
 
-
-
 f = 'result is %d of %d %d' % (c, a, b)
 print(f)
 
-
-
-k = 'my name is  and my record is {:10d}'.format(22223)
+k = 'my name is  and my record is {:10d}'. format(22223)
 print(k)
+
+

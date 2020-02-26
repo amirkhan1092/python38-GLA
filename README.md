@@ -6,9 +6,21 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 
 # Mid Term Exam content summery
 
-Data types object: [int(click here)](http://amirkhan1092.c1.biz/integer.pdf), [float](http://amirkhan1092.c1.biz/integer.pdf), [complex](http://amirkhan1092.c1.biz/integer.pdf), [string(click here)](http://www.amirkhan1092.c1.biz/string.pdf), [list(click here)](http://www.amirkhan1092.c1.biz/list.pdf) , [tuple(click here)](http://www.amirkhan1092.c1.biz/tuple.pdf), 
-dictionary(with methods), sets(with methods), bool, NoneType and functions (Built-in and UDF), Short Circuiting elementary in Python[click here](https://github.com/amirkhan1092/python38-GLA/blob/master/short_circuitry.py),
-Ternary Operator in Python(ternary feature). 
+Data types objects: 
+[int(click here)](http://amirkhan1092.c1.biz/integer.pdf), 
+[float](http://amirkhan1092.c1.biz/integer.pdf), 
+[complex](http://amirkhan1092.c1.biz/integer.pdf), 
+[String (click here)](http://www.amirkhan1092.c1.biz/string.pdf), 
+[list(click here)](http://www.amirkhan1092.c1.biz/list.pdf),
+[tuple(click here)](http://www.amirkhan1092.c1.biz/tuple.pdf), 
+Ternary Operator (ternary feature) and Short Circuiting elementary in Python [(click here for examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/short_circuitry.py),
+list comprehension [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/list_comprehension.py),
+String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/string_format.py),
+dictionary (with methods), 
+sets (with methods), 
+boolean Type, NoneType, 
+Functions (Built-in and UDF)
+
 
 # Sample paper for Mid-term Examination  
 Sample paper1 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper1.pdf)           
