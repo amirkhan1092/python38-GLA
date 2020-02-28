@@ -1,9 +1,9 @@
 ls=[]
 a=int(input('enter the length of list'))
-for i in range (0,a):
-    j=int(input())
+for i in range(0, a):
+    j = int(input())
     ls.append(j)
-k=[]
+k = []
 s = [0]
 c = ls.count(0)
 for i in ls:
@@ -12,19 +12,18 @@ for i in ls:
 k.extend(c*s)
 print(k)
 
-
 # missing number in a series
 x = eval(input())
-d=[]
-for i in range(1,x[-1]+1):
+d = []
+for i in range(x[0], x[-1]+1):
     if i not in x:
         d.append(i)
 print(d)
 
 
-s=input()
-s=s.lower()
-a=0
+s = input()
+s = s.lower()
+a = 0
 for i in range(97,123):
     if chr(i) not in s:
         a=1
@@ -166,18 +165,52 @@ for i in st1:
 print(b)
 
 
+# 1s length in a binary number
+k = int(input())
+bn = bin(k)[2:].split('0')
+out = len(max(bn, key=len))
+print(out)
 
 
 
+# largest integer in a list elements combinations
+import itertools
+# k = eval(input())
+k = [10, 7, 76, 415]
+k = list(map(str, k))  # ['10', '7', '76', '415']
+out = list(itertools.permutations(k))
+mx = 0
+for i in out:
+    t = int(''.join(i))
+    mx = max(mx, t)
+print(mx)
 
+# ln = len(k)
+# for i in range(ln):
+#     for j in range(ln):
+#         if i != j:
+#             tt = k[i], k[j]
+#
 
+# circular link list
+import time
+# lst = eval(input())
+a = lst[0]
+out = [a]
+lst.remove(a)
+c = 0
+while lst:
 
-
-
-
-
-
-
+        if i[c] == a[-1]:
+            out.append(i)
+            a = i
+            lst.remove(i)
+        print(out)
+        c +=1
+        c = 0 if len(lst)<=c else c
+        time.sleep(1)
+print(out)
+time.time()
 
 
 
