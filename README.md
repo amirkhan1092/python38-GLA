@@ -6,23 +6,40 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 
 # Python Programming content summery
 
-Data types objects: 
-[int(click here)](http://amirkhan1092.c1.biz/integer.pdf), 
-[float(click here)](http://amirkhan1092.c1.biz/integer.pdf), 
+Data types objects:
+ 
+[int(click here)](http://amirkhan1092.c1.biz/integer.pdf). 
+
+[float(click here)](http://amirkhan1092.c1.biz/integer.pdf).
+ 
 [complex(click here)](http://amirkhan1092.c1.biz/integer.pdf), 
+
 [String (click here)](http://www.amirkhan1092.c1.biz/string.pdf), 
+
 [list(click here)](http://www.amirkhan1092.c1.biz/list.pdf),
+
 [tuple(click here)](http://www.amirkhan1092.c1.biz/tuple.pdf), 
+
 Ternary Operator (ternary feature) and Short Circuiting elementary in Python [(click here for examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/short_circuitry.py),
+
 list comprehension [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/list_comprehension.py),
+
 String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/string_format.py),
+
 dictionary (with methods), 
+
 sets (with methods), 
+
 boolean Type, NoneType, 
+
 Functions (Built-in and UDF),
+
 Function Arguments: positional, keyword and Variable length arguments, 
+
 Anonymous Functions( Lambda Function), 
+
 Scope of Variable: global, local and nonlocal,  
+
 Recursion in Python, 
 
 Modules in Python: 
