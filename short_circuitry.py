@@ -6,7 +6,6 @@ False Evaluate Quantity
 '''
 
 
-
 ab = 1
 tr = 'True'
 
@@ -61,7 +60,7 @@ out = zip(l1, l2)
 
 
 
-
+# unzip
 l1= [out[i][0] for i in range(len(out))]
 l2 = [out[j][1] for j in range(len(out))]
 print(l1,l2)
