@@ -26,7 +26,7 @@ list comprehension [(examples)](https://github.com/amirkhan1092/python38-GLA/blo
 
 String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/string_format.py),
 
-dictionary (with methods), 
+dictionary[(click here)](http://amirkhan1092.c1.biz/dict.pdf) 
 
 sets (with methods), 
 
