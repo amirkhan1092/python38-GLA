@@ -5,9 +5,8 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 ![Syllabus Python](https://user-images.githubusercontent.com/15958589/72918043-00a79880-3d6b-11ea-9280-c131964d56dc.png)
 
 # Python Programming content summery
-
 Data types objects:
- 
+
 int[(click here)](http://amirkhan1092.c1.biz/integer.pdf)
 
 float[(click here)](http://amirkhan1092.c1.biz/integer.pdf)
@@ -28,19 +27,19 @@ String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/mas
 
 dictionary[(click here)](http://amirkhan1092.c1.biz/dict.pdf) 
 
-sets (with methods), 
+sets (with methods) 
 
-boolean Type, NoneType, 
+boolean Type, NoneType 
 
-Functions (Built-in and UDF),
+Functions (Built-in and UDF)
 
-Function Arguments: positional, keyword and Variable length arguments, 
+Function Arguments: positional, keyword and Variable length arguments 
 
-Anonymous Functions( Lambda Function), 
+Anonymous Functions( Lambda Function) 
 
-Scope of Variable: global, local and nonlocal,  
+Scope of Variable: global, local and nonlocal  
 
-Recursion in Python, 
+Recursion in Python 
 
 Modules in Python: 
 random, 
@@ -49,14 +48,11 @@ time,
 numpy, 
 pandas. 
 
-Regular Expression: Match, Search and find.
+Regular Expression: Match, Search and find
 
 File Handling: Reading and writing operation with local file.
 
 Exception Handling(click here for PDF)
-
-
-
 
 
 # Sample paper for Mid-term Examination  
@@ -70,5 +66,3 @@ Python3 in one picture with all data types
 ![image](https://user-images.githubusercontent.com/15958589/72918999-a8719600-3d6c-11ea-8270-7f2362843855.png)
 ![image](https://user-images.githubusercontent.com/15958589/72919090-da82f800-3d6c-11ea-8dff-836c9bd368ec.png)
 ![image](https://user-images.githubusercontent.com/15958589/72919151-f6869980-3d6c-11ea-947b-4c6039725476.png)
-
-

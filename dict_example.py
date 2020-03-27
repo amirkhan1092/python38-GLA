@@ -1,5 +1,27 @@
 
-# dictionary creation empty
+
+h = '''
+List
+Tuple
+Dictionary
+Sets
+
+function(UDF, Built-in): arguments positional, keyword 
+lambda function 
+Module:
+standard module: math, random, time, re
+third party module: numpy, pandas
+
+File handling: reading and writing operation with local files
+Regular Expression: re 
+Exception Handling
+
+'''
+
+# amirkhan1092.c1.biz/dict.pdf
+
+# dictionary creation
+# empty
 d = {}
 print(d, type(d))  # {} <class 'dict'>
 
@@ -7,36 +29,79 @@ d = dict()  # dict constructor
 print(d, type(d))  # {} <class 'dict'>
 
 
-# dictionary operation
 
+
+H = ['Vaibhav', 20, 8.0, 'Sec 3', 'GLA']
+
+D = {'name':['Vaibhav', 'sachine'], 'rolln':20, 'institute':'GLA', 'section': 'Sec 3'}
+
+print(H[0])
+print(D['name'])
+
+
+
+
+# dictionary operation
 dct = { 'rolln':30, 'cpi':8.0, 'section':'A', 'name':'akshay'}
 print(dct, type(dct))
-# accessing the element
+
+
 d = dct['name']  # element at given key
-print(d)
+print(d) #accessing the element
+d = dct['address']
+print(d)  # keyError
+
+dct['name'] = 'Abhinav'
+dct['address'] = 'GLA University'
+print(dct)
+
+
+
+lst = ['hello', 'Hi', 'address', 'gla']
+print(list(range(len(lst))))
 
 # keys() : get all the keys of dict
-dct = {'name':'Govind', 'rolln':30, 'cpi':7.0, 'section':'E'}
+dct = {'name': 'Govind', 'rolln':30, 'cpi':7.0, 'section':'A'}
 out1 = dct.keys()
-print(out1)  # dict_keys(['name', 'rolln', 'cpi', 'section'])
+print(out1, type(out1)) # dict_keys(['name', 'rolln', 'cpi', 'section'])
+# <class 'dict_keys'>
 
+print(list(out1))  # ['name', 'rolln', 'cpi', 'section']
+
+# values()
 out2 = dct.values()
-print(out2, type(out2))  # dict_values(['Govind', 30, 7.0, 'E']) <class 'dict_values'>
+print(out2, type(out2))  # dict_values(['Govind', 30, 7.0, 'E'])
+# <class 'dict_values'>
+
+
 
 # update value at key
+lst = [2, 4, 5]
+lst[4] = 9
+
 dct = {'name':'Govind', 'rolln':30, 'cpi':7.0, 'section':'E'}
 dct['name'] = 'akshay'
-dct['adress'] = 'GLA Mathura'
+dct['section'] = 'O'
+dct['address'] = 'GLA University'
 print(dct)
+
+del dct['name']
+print(dct)
+dct['Name'] = 'akshay'
+print(dct)
+
+
 
 d = {1:0, 2:0, 3:0}
 print(d)
 
 # clear : to clear the dictionary object as empty
 d = {1:3, 0:43}
+print(d)
+print(id(d))
 d.clear()
 print(d)
-
+print(id(d))
 
 
 
@@ -44,19 +109,16 @@ print(d)
 p = 1,7,10,18,44,46,52,54
 
 # copy
-d = {1:3, 0:43}
-t = d.copy()
-t['next'] = 'data from user '
-
-
-print(t)
+d = {1:  [3], 0: 43}
+y = d.copy()
 print(d)
 
 
 # get
-d = {1:3, 0:43, (2, 4):'tuple'}
+d = {1: 3, 0: 43, (2, 4): 'tuple'}
 out = d.get(1)
 print(out)
+
 
 # fromkeys()
 k = ['name', 'rolln', 'section', 'cpi']
