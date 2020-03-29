@@ -24,11 +24,10 @@ dictionary[(pdf click here)](http://amirkhan1092.c1.biz/dict.pdf)
 
 sets [(pdf click here)](http://amirkhan1092.c1.biz/set.pdf)  
 
-boolean Type, NoneType 
 
 Functions (Built-in and UDF),
 Function Arguments: positional,
-keyword and Variable length arguments,
+keyword and Variable length arguments. 
 Anonymous Functions( Lambda Function),
 Scope of Variable: global, local and nonlocal 
 [( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf)
