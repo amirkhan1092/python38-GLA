@@ -7,11 +7,7 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 # Python Programming content summery
 Data types objects:
 
-int[(click here)](http://amirkhan1092.c1.biz/integer.pdf)
-
-float[(click here)](http://amirkhan1092.c1.biz/integer.pdf)
- 
-complex[(click here)](http://amirkhan1092.c1.biz/integer.pdf)
+int, float, complex [(click here)](http://amirkhan1092.c1.biz/integer.pdf)
 
 String [(click here)](http://www.amirkhan1092.c1.biz/string.pdf)
 
@@ -27,17 +23,17 @@ String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/mas
 
 dictionary[(click here)](http://amirkhan1092.c1.biz/dict.pdf) 
 
-sets (with methods) 
+sets [(click here)](http://amirkhan1092.c1.biz/set.pdf)  
 
 boolean Type, NoneType 
 
-Functions (Built-in and UDF)
+Functions (Built-in and UDF),
+Function Arguments: positional,
+keyword and Variable length arguments,
+Anonymous Functions( Lambda Function),
+Scope of Variable: global, local and nonlocal for pdf 
+[( click here )](http://amirkhan1092.c1.biz/function.pdf)
 
-Function Arguments: positional, keyword and Variable length arguments 
-
-Anonymous Functions( Lambda Function) 
-
-Scope of Variable: global, local and nonlocal  
 
 Recursion in Python 
 

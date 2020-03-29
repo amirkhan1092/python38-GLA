@@ -63,14 +63,14 @@ print(list(range(len(lst))))
 # keys() : get all the keys of dict
 dct = {'name': 'Govind', 'rolln':30, 'cpi':7.0, 'section':'A'}
 out1 = dct.keys()
-print(out1, type(out1)) # dict_keys(['name', 'rolln', 'cpi', 'section'])
+print(out1, type(out1))  # dict_keys(['name', 'rolln', 'cpi', 'section'])
 # <class 'dict_keys'>
 
 print(list(out1))  # ['name', 'rolln', 'cpi', 'section']
 
 # values()
 out2 = dct.values()
-print(out2, type(out2))  # dict_values(['Govind', 30, 7.0, 'E'])
+print(out2, type(out2))  # dict_values(['Govind', 30, 7.0, 'A'])
 # <class 'dict_values'>
 
 
@@ -96,6 +96,7 @@ d = {1:0, 2:0, 3:0}
 print(d)
 
 # clear : to clear the dictionary object as empty
+# to clear the items
 d = {1:3, 0:43}
 print(d)
 print(id(d))
@@ -106,33 +107,43 @@ print(id(d))
 
 
 
-p = 1,7,10,18,44,46,52,54
-
 # copy
-d = {1:  [3], 0: 43}
+d = {1:  3, 0: 43}
 y = d.copy()
+y.clear()
+print(y)
 print(d)
 
 
 # get
-d = {1: 3, 0: 43, (2, 4): 'tuple'}
-out = d.get(1)
-print(out)
+d = {'one': 3, 0: 43, (2, 4): 'tuple'}
+out = d.get('second', 'NA')
+print(out)  # NA
 
 
 # fromkeys()
 k = ['name', 'rolln', 'section', 'cpi']
 d = dict.fromkeys(k, 0)
-out = d.items()
-print(out)
+print(d)  # {'name': 0, 'rolln': 0, 'section': 0, 'cpi': 0}
 
 d = {'entry1':{'name':'Sachin', 'section':'O'}, 'entry2':{'name':'Ravi', 'section':'T'}}
 
 # 1,5,15,23,29,48,52,53,55
 
-k = [(1, 2), (5, 4), (6, 7), 'Hi']
+# items() : pure form dictionary
+dct = {'name':'Govind', 'rolln':30, 'cpi':7.0, 'section':'E'}
+pureform = dct.items()
+print(pureform)
+# [('name', 'Govind'), ('rolln', 30), ('cpi', 7.0), ('section', 'E')]
+
+
+
+k = [(1, 6), (5, 4), (6, 7)]
 d = dict(k)
 print(d, type(d))
+# {1: 2, 5: 4, 6: 7, 'H': 'i'} <class 'dict'>
+
+
 
 
 # items()
