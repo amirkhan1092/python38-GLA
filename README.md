@@ -5,15 +5,14 @@ Specially for GLA students who appearing in B.tech first year session 2019-20
 ![Syllabus Python](https://user-images.githubusercontent.com/15958589/72918043-00a79880-3d6b-11ea-9280-c131964d56dc.png)
 
 # Python Programming content summery
-Data types objects:
 
-int, float, complex [(click here)](http://amirkhan1092.c1.biz/integer.pdf)
+int, float, complex [(pdf click here)](http://amirkhan1092.c1.biz/integer.pdf)
 
-String [(click here)](http://www.amirkhan1092.c1.biz/string.pdf)
+String [(pdf click here)](http://www.amirkhan1092.c1.biz/string.pdf)
 
-list[(click here)](http://www.amirkhan1092.c1.biz/list.pdf)
+list [(pdf click here)](http://www.amirkhan1092.c1.biz/list.pdf)
 
-tuple[(click here)](http://www.amirkhan1092.c1.biz/tuple.pdf) 
+tuple [(pdf click here)](http://www.amirkhan1092.c1.biz/tuple.pdf) 
 
 Ternary Operator (ternary feature) and Short Circuiting elementary in Python [(click here for examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/short_circuitry.py)
 
@@ -21,9 +20,9 @@ list comprehension [(examples)](https://github.com/amirkhan1092/python38-GLA/blo
 
 String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/string_format.py)
 
-dictionary[(click here)](http://amirkhan1092.c1.biz/dict.pdf) 
+dictionary[(pdf click here)](http://amirkhan1092.c1.biz/dict.pdf) 
 
-sets [(click here)](http://amirkhan1092.c1.biz/set.pdf)  
+sets [(pdf click here)](http://amirkhan1092.c1.biz/set.pdf)  
 
 boolean Type, NoneType 
 
@@ -31,8 +30,8 @@ Functions (Built-in and UDF),
 Function Arguments: positional,
 keyword and Variable length arguments,
 Anonymous Functions( Lambda Function),
-Scope of Variable: global, local and nonlocal for pdf 
-[( click here )](http://amirkhan1092.c1.biz/function.pdf)
+Scope of Variable: global, local and nonlocal 
+[( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf)
 
 
 Recursion in Python 
