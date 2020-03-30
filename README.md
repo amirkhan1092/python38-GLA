@@ -20,7 +20,8 @@ list comprehension [(examples)](https://github.com/amirkhan1092/python38-GLA/blo
 
 String format [(examples)](https://github.com/amirkhan1092/python38-GLA/blob/master/string_format.py)
 
-dictionary[(pdf click here)](http://amirkhan1092.c1.biz/dict.pdf) 
+dictionary[(pdf click here)](http://amirkhan1092.c1.biz/dict.pdf),
+[MCQ](https://github.com/amirkhan1092/python38-GLA/blob/master/dictionary_mcq.pdf) 
 
 sets [(pdf click here)](http://amirkhan1092.c1.biz/set.pdf)  
 
@@ -30,7 +31,9 @@ Function Arguments: positional,
 keyword and Variable length arguments. 
 Anonymous Functions( Lambda Function),
 Scope of Variable: global, local and nonlocal 
-[( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf)
+[( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf),
+[(MCQ Function)](http://amirkhan1092.c1.biz/function_mcq.pdf)
+[(Examples with Python File)]()
 
 
 Recursion in Python 
