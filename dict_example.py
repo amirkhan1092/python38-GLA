@@ -60,6 +60,7 @@ print(dct)
 lst = ['hello', 'Hi', 'address', 'gla']
 print(list(range(len(lst))))
 
+
 # keys() : get all the keys of dict
 dct = {'name': 'Govind', 'rolln':30, 'cpi':7.0, 'section':'A'}
 out1 = dct.keys()
@@ -97,27 +98,30 @@ print(d)
 
 # clear : to clear the dictionary object as empty
 # to clear the items
-d = {1:3, 0:43}
+d = {1: 3, 0: 43}
 print(d)
 print(id(d))
 d.clear()
 print(d)
 print(id(d))
-
-
+# {1: 3, 0: 43}
+# 237627984
+# {}
+# 237627984
 
 
 # copy
-d = {1:  3, 0: 43}
+d = {1: 3, 0: 43}
 y = d.copy()
 y.clear()
 print(y)
 print(d)
 
 
+
 # get
 d = {'one': 3, 0: 43, (2, 4): 'tuple'}
-out = d.get('second', 'NA')
+out = d.get('Address', 'NA')
 print(out)  # NA
 
 
@@ -126,19 +130,22 @@ k = ['name', 'rolln', 'section', 'cpi']
 d = dict.fromkeys(k, 0)
 print(d)  # {'name': 0, 'rolln': 0, 'section': 0, 'cpi': 0}
 
+
+
 d = {'entry1':{'name':'Sachin', 'section':'O'}, 'entry2':{'name':'Ravi', 'section':'T'}}
 
 # 1,5,15,23,29,48,52,53,55
 
+
 # items() : pure form dictionary
 dct = {'name':'Govind', 'rolln':30, 'cpi':7.0, 'section':'E'}
-pureform = dct.items()
+pureform = list(dct.items())
 print(pureform)
 # [('name', 'Govind'), ('rolln', 30), ('cpi', 7.0), ('section', 'E')]
 
 
 
-k = [(1, 6), (5, 4), (6, 7)]
+k = [(1, 2), (5, 4), (6, 7)]
 d = dict(k)
 print(d, type(d))
 # {1: 2, 5: 4, 6: 7, 'H': 'i'} <class 'dict'>
@@ -148,34 +155,69 @@ print(d, type(d))
 
 # items()
 D = {1:3, 4:0}
-out = D.items()
+
+out = list(D.items())
 print(out)  # dict_items([(1, 3), (4, 0)])
+
+ls = [6, 89, 9]
+k = ls.pop()
+
 
 # pop()
 D = {'name':'sachin', 'section':'O', 'rolln':30}
-k = D.pop('rolln')
+del D['rolln']  # deletion statement
+k = D.pop('rolln') # return
 print(k)
 print(D)
+# 30
+# {'name': 'sachin', 'section': 'O'}
 
-# popitems()
+
+# popitem()
 D = {'name':'sachin', 'section':'O', 'rolln':30}
 k = D.popitem()
 print(k)  # ('rolln', 30)
 
+
 # update()
 D1 = {'Name':'Sachin', 'Section':'O', 'Rolln':30}
-D2 = {'CPI':9.0, 'Name':'Ravi'}
+D2 = {'CPI':9.0, 'Name':0}
 D1.update(D2)
 print(D1)  # {'Name': 'Ravi', 'Section': 'O', 'Rolln': 30, 'CPI': 9.0}
 
+
 # setdefault()
-
-D1 = {'Name':'Sachin', 'Section':'O', 'Rolln':30}
-D1.setdefault('rolln', 41)
-
+D1 = {'Name': 'Sachin', 'Section': 'O', 'Address': 'IIT Delhi', 'Rolln':20}
+D1.setdefault('Rolln', 'NA')
 print(D1)
 
 
+
+D = {(1, 2): 1, (2, 3): 5}
+k = D[1, 2]
+k = D.get((1, 2))  # 2
+print(k) #1
+
+
+
+
+D = {2: 6}
+k = D.get(67)
+print(k)
+
+
+fruits = {}
+
+def addone(key):
+    if key in fruits:
+        fruits[key] += 1
+    else:
+        fruits[key] = 1
+
+addone('Apple')
+addone('Banana')
+addone('apple')
+{'Apple': 1, 'Banana': 1, 'apple': 1}
 
 
 
