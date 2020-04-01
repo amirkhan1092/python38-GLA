@@ -193,10 +193,16 @@ print(D1)
 
 
 
-D = {(1, 2): 1, (2, 3): 5}
-k = D[1, 2]
-k = D.get((1, 2))  # 2
-print(k) #1
+D = {'a': 1, 'b': 5, 'c': 4}
+k = D['a', 'b']
+
+h = D.get('a', 'b') # 1
+
+
+print(k)  # 1
+
+
+
 
 
 
@@ -207,23 +213,50 @@ print(k)
 
 
 fruits = {}
-
-def addone(key):
-    if key in fruits:
-        fruits[key] += 1
+def addone(k):
+    if k in fruits:
+        fruits[k] += 1
     else:
-        fruits[key] = 1
-
+        fruits[k] = 1
 addone('Apple')
 addone('Banana')
 addone('apple')
-{'Apple': 1, 'Banana': 1, 'apple': 1}
+print(len(fruits))  # 3
+
+
+
+
+
+D = {1.0: 20}
+D[1] = 100
+print(D)  # {1.0: 100}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+fr = {}
+fr[1] = 1
+fr['1'] = 2
+fr[1] += 1
+s = 0
+for i in fr:
+    s += fr['1']
+
+print(s)
+
+d = {1.0: 2}
+d[1] = 10
+print(d)
 
 
 
