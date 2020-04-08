@@ -16,9 +16,6 @@ num2 = 21
 print_sum(num1, num2)
 
 
-
-
-
 def type_sum(v1, v2):
     type1 = [int, list, str, tuple]
     type2 = [dict, set]
@@ -34,34 +31,28 @@ print(type_sum(value1, value2))
 
 
 
-
-
-
-
+# positional
 def add( y, k = 0):
     print('first argv ', k)
     print('second argv ', y)
 
 add(5,)
 
+# optional values
 h, k, *u = (6, 9, 78, 7)
 
-
-
-
-
-def type_sum(a, b):
-    if type(a) == dict or type(a) == set:
-        a.update(b)
-        return f'values are unordered and merge value is {a}'
-    else:
-        re = a + b
-        return f'values are ordered and sum/merge is {re}'
-
-v1 = eval(input('enter the first value '))
-v2 = eval(input('enter the second value '))
-c = type_sum(v1, v2)
-print(c)
+#
+# def type_sum(a, b):
+#     if type(a) == dict or type(a) == set:
+#         a.update(b)
+#         return f'values are unordered and merge value is {a}'
+#     else:
+#         re = a + b
+#         return f'values are ordered and sum/merge is {re}'
+#
+# v1 = eval(input('enter the first value '))
+# v2 = eval(input('enter the second value '))
+# c = type_sum(v1, v2)
 
 
 
@@ -77,6 +68,7 @@ def add(a=0, b): # error
 k = add(7, 8)
 print(k)
 
+# built-in Example
 print(int('67', 8))  # 8 is default argv
 
 
@@ -88,7 +80,7 @@ def add(a, b):
 k = add( 30, 'rishabh')
 print(k)
 
-['kavya kumar', 'kirtiman singh', 'Hritik', '03_Aastha singh']
+
 
 
 # optional positional arguments
@@ -131,10 +123,7 @@ sqr, cube = add(b=9, a=7)
 print('square',sqr)
 print('cube', cube)
 
-
-
-
-
+# optional Keyword arguments
 def temp(**dt):
     re = '''
     Name : {}
