@@ -48,18 +48,109 @@ h, k, *u = (6, 9, 78, 7)
 
 
 
-def add(a, b):
-    if type(a) in [dict, set]:
-        a.update(b)
-        return f'values are unordered and addition/merge values is {a}'
-    else:
-        c = a + b
-        return f'value are ordered and addition is {c}'
 
-v1 = eval(input('enter the value 1'))
-v2 = eval(input('enter the value 1'))
-c = add(v1, v2)
+
+def type_sum(a, b):
+    if type(a) == dict or type(a) == set:
+        a.update(b)
+        return f'values are unordered and merge value is {a}'
+    else:
+        re = a + b
+        return f'values are ordered and sum/merge is {re}'
+
+v1 = eval(input('enter the first value '))
+v2 = eval(input('enter the second value '))
+c = type_sum(v1, v2)
 print(c)
+
+
+
+# arguments in Python Function
+# default arguments
+def add(a, b=0): # right
+    return a + b
+k = add(8)
+print(k)
+
+def add(a=0, b): # error
+    return a + b
+k = add(7, 8)
+print(k)
+
+print(int('67', 8))  # 8 is default argv
+
+
+
+# positional arguments
+def add(a, b):
+        print('at first position ', a)
+        print('second position ', b)
+k = add( 30, 'rishabh')
+print(k)
+
+['kavya kumar', 'kirtiman singh', 'Hritik', '03_Aastha singh']
+
+
+# optional positional arguments
+def add(a, b, *t):
+    print('at first position ', a)
+    print('second position ', b)
+    print('optional argv', t)
+
+k = add('rishabh', 80)
+print(k)
+
+
+
+def optional_sum(*opt, a=0, b=0):
+    return sum(opt)
+
+h = optional_sum(7, 8, 9, 5, 4, 4, a = 7, b= 78)
+print(h)
+
+
+print(8, 'hello', 9.0, 89, sep='*')
+
+
+
+def disp(*t, sap=' ', nnd='' ):  # t = ('hello', 8, 60, 8.0)
+    k = sap.join(map(str, t))
+    print(k,end='')
+    print(nnd, end='')
+
+disp("hello", 8, 60, 8.0, end='\n')
+disp("Next command ")
+
+
+
+# keyword arguments
+def add(a, b):
+    return a**2, b**3
+
+sqr, cube = add(b=9, a=7)
+print('square',sqr)
+print('cube', cube)
+
+
+
+
+
+def temp(**dt):
+    re = '''
+    Name : {}
+    Roll number : {}
+    Section : {}
+    Address : {}
+    '''. format(dt.get('name'), dt.get('rolln'), dt.get('sec'), dt.get('address'))
+    return re
+
+t = temp( Sec='O', AddRess="GLA", Name='Rishabh', cpi=7.9, father="Mr xyz")
+print(t)
+
+
+
+
+
 
 
 
