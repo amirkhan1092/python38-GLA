@@ -77,6 +77,7 @@ print(int('67', 8))  # 8 is default argv
 def add(a, b):
         print('at first position ', a)
         print('second position ', b)
+
 k = add( 30, 'rishabh')
 print(k)
 
@@ -105,39 +106,94 @@ print(8, 'hello', 9.0, 89, sep='*')
 
 
 
-def disp(*t, sap=' ', nnd='' ):  # t = ('hello', 8, 60, 8.0)
+def disp(*t, sap=' ', nnd='\n' ):  # t = ('hello', 8, 60, 8.0)
     k = sap.join(map(str, t))
     print(k,end='')
     print(nnd, end='')
 
-disp("hello", 8, 60, 8.0, end='\n')
+disp("hello", 8, 60, 8.0, nnd='\n')
 disp("Next command ")
 
 
+# default arguments
+# positional Argv
+# optional Positional Argv
 
-# keyword arguments
+# keyword arguments  : arguments with names
 def add(a, b):
     return a**2, b**3
 
-sqr, cube = add(b=9, a=7)
-print('square',sqr)
-print('cube', cube)
+sqr, cube = add( b=2, a=3)
+print('square', sqr)
+print('Cube', cube)
 
-# optional Keyword arguments
-def temp(**dt):
+
+# Keyword arguments
+def info_show(name, rolln, section, address):
     re = '''
-    Name : {}
-    Roll number : {}
-    Section : {}
-    Address : {}
-    '''. format(dt.get('name'), dt.get('rolln'), dt.get('sec'), dt.get('address'))
+            Name : {}
+            Roll Number : {}
+            Section : {}
+            Address : {}
+    '''. format(name, rolln, section, address)
     return re
 
-t = temp( Sec='O', AddRess="GLA", Name='Rishabh', cpi=7.9, father="Mr xyz")
-print(t)
+k = info_show( section='3', address='GLA University', rolln=30, name='ravi')
+print(k)
+
+# optional keyword arguments
+def info_show(**dt ):
+    # {'Section': '3', 'Address': 'GLA University', 'NaMe': 'ravi', 'rolln': 30, 'cpi': 9.0}
+
+    for i in dt.copy():
+        dt[i.lower()] = dt.pop(i)
+    re = '''
+            Name : {}
+            Roll Number : {}
+            Section : {}
+            Address : {}
+    '''. format(dt.get('name'), dt.get('rolln'), dt.get('section'), dt.get('address'))
+    return re
+
+k = info_show( Address='GLA University', NaMe='ravi', Rolln=30, CPI=9.0)
+print(k)
 
 
 
+
+
+
+
+
+
+# scope of variable
+'''
+local : variable inside function
+global : keyword that give to access the global 
+nonlocal : keyword that give to access the nonlocal
+'''
+
+
+def my_fun():
+    def inner():
+        k = 78
+    def inner_non():
+        nonlocal k
+        k = 60
+    def inner_global():
+        global k
+        k = 90
+
+    inner()
+    print(k)  # 0
+    inner_non()
+    print(k) # 60
+    inner_global()
+    print(k)  # 60
+
+k = 1
+my_fun()
+print(k)  # 90
 
 
 
