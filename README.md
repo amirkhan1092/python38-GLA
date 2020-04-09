@@ -33,7 +33,7 @@ Anonymous Functions( Lambda Function),
 Scope of Variable: global, local and nonlocal 
 [( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf),
 [(MCQ Function)](http://amirkhan1092.c1.biz/function_mcq.pdf)
-[(Examples with Python File)]()
+[(Examples with Python File)](https://github.com/amirkhan1092/python38-GLA/blob/master/functions_commonfile.py)
 
 
 Recursion in Python 
