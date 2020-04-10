@@ -158,7 +158,58 @@ def info_show(**dt ):
 k = info_show( Address='GLA University', NaMe='ravi', Rolln=30, CPI=9.0)
 print(k)
 
+# global and local : define terms only based on output
+def my_fun():
+    var = 10  # local variable
+    print(var)  # local print 10
 
+var = 20  # global variable
+my_fun()
+print(var)  # global value 20
+
+# global keyword : allow the permission to use the global variable
+def my_fun():
+    global var   # permission to write and read in global variable
+    var = 8    # change in global value with variable var
+    print(var)  # global variable 8
+
+
+var = 10 # global variable
+my_fun()
+print(var) # global value 8
+
+
+
+
+
+# unbound error
+def my_fun():
+    print(var)  # var as global read only
+    var = 0 # new variable a local
+
+    var = var + 20  #
+var = 20
+my_fun()
+print(var)
+
+
+
+# local variable
+# example 1
+def my_fun():
+    var = 10
+
+
+my_fun()
+print(var)  # name error 'var'
+
+
+# example 2
+def my_fun():
+    global var  # permission to use global scope variable
+    var = 10
+my_fun()
+print(var)  # output 10
 
 
 
@@ -194,6 +245,70 @@ def my_fun():
 k = 1
 my_fun()
 print(k)  # 90
+
+
+
+# scope of variable
+
+# global scope
+
+def my_function():
+    a = 90  # local variable
+    print(a)  # local value
+
+a = 0  # global variable
+my_function()
+print(a) # global values
+
+
+
+# global keyword :
+def my_fun():
+    global a  # allow the permission to use the global scope
+    a = 90
+
+a = 0
+my_fun()
+print(a)  # output : 90
+
+
+
+# local and global
+def my_fun():
+    global x
+    x = 'HI'
+    y = 'HELLO'
+
+x = 'hi'
+y = 'hello'
+my_fun()
+print(x)  # 'HI'
+print(y) # 'hello'
+
+
+# non local
+def my_fun():
+    def fun_1():
+        d = 1
+    def fun_2():
+        nonlocal d  # allow the permission for non local scope
+        d = 2
+    def fun_3():
+        global d
+        d = 3
+    d = 0   # local variable (non local)
+    fun_1()
+    print(d)  # 0
+    fun_2()
+    print(d) # 2
+    fun_3()
+    print(d) # 2
+
+d = 100  # global variable
+my_fun()
+print(d)  # 3
+
+
 
 
 
