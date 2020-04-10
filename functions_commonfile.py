@@ -180,8 +180,6 @@ print(var) # global value 8
 
 
 
-
-
 # unbound error
 def my_fun():
     print(var)  # var as global read only
@@ -285,17 +283,22 @@ my_fun()
 print(x)  # 'HI'
 print(y) # 'hello'
 
-
 # non local
 def my_fun():
     def fun_1():
+        def metr():
+            global d
+            d = 20
         d = 1
+        metr()
+        print(d)
     def fun_2():
         nonlocal d  # allow the permission for non local scope
         d = 2
     def fun_3():
-        global d
+        nonlocal d
         d = 3
+
     d = 0   # local variable (non local)
     fun_1()
     print(d)  # 0
