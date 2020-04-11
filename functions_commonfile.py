@@ -286,20 +286,19 @@ print(y) # 'hello'
 # non local
 def my_fun():
     def fun_1():
-        def metr():
+        def kmp():
             global d
-            d = 20
+            d = 1100
         d = 1
-        metr()
-        print(d)
+        kmp()
+        print(d)  # 1
     def fun_2():
         nonlocal d  # allow the permission for non local scope
         d = 2
     def fun_3():
-        nonlocal d
+        global d  # allow the permission for global scope
         d = 3
-
-    d = 0   # local variable (non local)
+    d = 0
     fun_1()
     print(d)  # 0
     fun_2()
@@ -313,20 +312,100 @@ print(d)  # 3
 
 
 
+# lambda function
+f_to_h = lambda x : (x-32)/1.8
+fah = int(input('enter the fah value '))
+k = f_to_h(fah)
+print('cel value ', k)
+
+
+k = [7, 9, 4, 34, 56]
+
+re = map(lambda x : (x-32)/1.8, k)
 
 
 
 
 
 
+def my_fun():
+    def fun_1():
+        def kmp():
+            global h
+            h = 565
+        h = 1
+        kmp()
+        print(h)  # 1
+    def fun_2():
+        nonlocal h # allow the permission to use the non local scope
+        h = 2
+    def fun_3():
+        global h # allow the permission to use the global scope
+        h = 3
+    h = 10  # local (for nested function h is non-local)
+    fun_1()
+    print(h)  # 10
+    fun_2()
+    print(h)  # 2
+    fun_3()
+    print(h)  # 2
+
+h = 0  # global variable
+my_fun()
+print(h)  # global value  output: 3
 
 
 
 
+# variable scope in Python
+def my_fun():
+    def fun_1():
+        def kmp():
+            nonlocal k
+            k = 800
+        k = 1
+        kmp()
+        print(k) # 1
+    def fun_2():
+        nonlocal k  # allow the permission to use nonlocal scope
+        k = 2
+    def fun_3():
+        nonlocal k  #
+        k = 3
+    k = 20  # local variable (nonlocal for nested function)
+    fun_1()
+    print(k)  # 20
+    fun_2()
+    print(k)  # 2
+    fun_3()
+    print(k)  # 3
 
+k = 0  # global variable
+my_fun()
+print(k)  # 800
+# \
 
-
-
+# consecutive integer groups : competitive coding
+# for _ in range(int(input())):
+#     p = int(input())
+#     lst = []
+#     ls = list(map(int, input().strip().split()))
+#     tmpl = []
+#
+#
+#     for i in range(len(ls)-1):
+#         if ls[i+1] - ls[i] == 1:
+#             tmpl.append(ls[i])
+#             if i == len(ls)-2:
+#                 tmpl.append(ls[i+1])
+#                 lst.append(tmpl)
+#
+#         else:
+#             tmpl.append(ls[i])
+#             lst.append(tmpl)
+#             tmpl = []
+#     print(lst)
+#     print(len(list(filter(lambda x:len(x)>1, lst))))
 
 
 
