@@ -410,6 +410,91 @@ print(k)  # 800
 
 
 
+# lambda function
+
+#
+ls = [2, 45, 23, 4, 12]
+out = list(map(lambda a: 'special number' if a > 20 else 'normal number ', ls))
+print(out)
+
+
+
+k = [('animesh', 21), ('tanishq', 41), ('vasundhara', 40), ('ram', 26)]
+# [('tanishq', 41), ('vasundhara', 40), ('ram', 26), ('animesh', 21)]
+k.sort(key=lambda x:x[1])
+print(k)
+
+
+
+# def prime(n):
+#     count = 0
+#     for i in range(1, n+1):
+#         if n % i == 0:
+#             count += 1
+#
+#     if count == 2:
+#         return 'prime number '
+#     else:
+#         return 'not Prime number'
+
+
+# lambda function
+def Add(a, b):  # function with def
+    return a + b
+
+Add = lambda a, b : a + b  # function with lambda keyword
+k = Add(2, 6)
+print(k)
+
+
+# cel to fah
+cel_to_fah = lambda x:(x-32)/1.8
+c = int(input())
+fh = cel_to_fah(c)
+print(fh)
+
+
+
+k = ['23', '34', '3', '0']
+lst = list(map(lambda y:'0'+y, k))
+print(lst)
+
+
+
+k = [('3', '0', '1') , ('7', '5', '44')]
+lst = list(map(lambda x:''.join(x), k))
+print(lst)
+
+
+# lambda functions
+# example 1
+add = lambda a, b: a + b
+k = add(2, 6)
+print(k)
+
+
+# example 2
+cel2fah = lambda x : x*1.8 + 32
+cel = int(input())
+fah = cel2fah(cel)
+print(fah)
+
+
+
+# example 3 : convert all values(cel) into fah
+
+lst = [45, -40, 48, 20, -100]
+out = list(map(lambda c: c*18 + 32, lst))
+print(out)
+
+
+# example 4
+def apna_fun(h):
+    return h.split()  # ['rajan', 'tyagi']
+
+lst = ['rajan tyagi', 'rahul sharma', 'xyz gupta', 'abhinav pandit']
+lst.sort(key=apna_fun)
+print(lst)
 
 
 
