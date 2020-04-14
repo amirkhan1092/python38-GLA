@@ -488,13 +488,83 @@ out = list(map(lambda c: c*18 + 32, lst))
 print(out)
 
 
-# example 4
-def apna_fun(h):
-    return h.split()  # ['rajan', 'tyagi']
-
+# example 4 : sort list with surname Alphabetically
 lst = ['rajan tyagi', 'rahul sharma', 'xyz gupta', 'abhinav pandit']
-lst.sort(key=apna_fun)
+lst.sort(key=lambda h:h.split()[1])
 print(lst)
+# sorting on length
+lst = ['rajan tyagi', 'rahul sharma', 'xyz gupta', 'abhinav pandit']
+lst.sort(key=lambda h:len(h.split()[1]))
+print(lst)
+
+
+
+# filter() the odd numbers values
+ls = [2, 5, 7, 98, 2, 1, 9, 23]
+odd = list(filter(lambda x: x % 2, ls))
+print(odd)
+
+
+# min()/max()
+# example 1
+ls = [2, 54, 7, 43, 987]
+out1 = min(ls)
+out2 = max(ls)
+print(out1)  # 2
+print(out2)  # 987
+
+# example 2
+ls = ['hello', 'hi', 'ravi', 'class', 'abc xyz ghd']
+out1 = min(ls, key=len)
+out2 = max(ls, key=len)
+print(out1)  # 'hi'
+print(out2)  # 'abc xyz ghd'
+
+
+
+# map
+# filter
+# min()/max()
+
+
+# map
+k = [5, 89, 4, 45]
+out = list(map(lambda x: x+2, k))
+print(out)
+
+# filter : filter odd values
+
+k = [7, 4, 3, 2, 90, 45]
+odd = list(filter(lambda x: x % 2, k))
+print(odd)
+
+
+# lambda with sort
+# odd positions
+# example 1
+k = [7, 4, 3, 2, 90, 45, 8, 6, 5, 2, 88, 89]
+k.sort(key=lambda x:x%2)
+print(k)
+
+# example 2 sorting with surname alphabetically
+k = ['ruchi gupta', 'rahul sharma', 'abhinav pandey', 'rishabh garg', 'saransh pathak']
+k.sort(key=lambda x:x.split()[-1])
+print(k)
+
+# example 2 sorting ascii-weight
+k = ['ruchi gupta', 'rahul sharma', 'abhinav pandey', 'rishabh garg', 'saransh pathak']
+k.sort(key=lambda x:sum(map(ord, x)))
+print(k)
+
+
+k = bytearray(b'string')
+l = bytes(22)
+
+
+
+
+
+
 
 
 
