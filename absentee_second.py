@@ -19,12 +19,12 @@ def browse_function():
 def calc():
     data = pd.read_csv(root.filename)
     data_main = pd.read_csv(root.mainfile)
-    useremail = set(data['User Email'])
+    user_email = set(data['User Email'])
     main1 = data_main['Official Email-ID']
     main2 = data_main['Class Roll No']
     main_dict = dict(zip(main1, main2))
 
-    data = list(set(main1) - set(useremail))
+    data = list(set(main1) - set(user_email))
     ls = []
     for i in data:
         ls.append(main_dict.get(i))
