@@ -1,6 +1,7 @@
-import pandas as pd
 from tkinter import *
 from tkinter.filedialog import askopenfilename
+
+import pandas as pd
 
 root = Tk()
 root.configure(background='light green')
@@ -47,3 +48,6 @@ browsebutton = Button(root, text="show Absentee", command=calc)
 browsebutton.pack()
 pathlabel = Label(root)
 pathlabel.pack()
+
+# running the mainloop here to test out the program
+root.mainloop()
