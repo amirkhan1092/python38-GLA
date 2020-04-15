@@ -10,7 +10,8 @@ root.geometry("500x250")
 
 
 def browse_function():
-    root.main_file = 'sec' + section.get() + '.csv'  # local csv file having all the details of the students with official emails
+    root.main_file = 'sec' + section.get() + '.csv'  # local csv file having all the details of the students with
+    # official emails
 
     root.filename = askopenfilename()  # browse csv file for from zoom
 
