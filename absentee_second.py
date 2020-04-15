@@ -9,7 +9,7 @@ root.title('GLA Online Attendance Absentees List Generator (based on official Em
 root.geometry("500x250")
 
 
-def browsefunc():
+def browse_function():
     root.mainfile = 'sec' + section.get() + '.csv'  # local csv file having all the details of the students with official emails
 
     root.filename = askopenfilename()  # browse csv file for from zoom
@@ -42,7 +42,7 @@ entry2 = Entry(root, textvariable=section)
 entry2.pack()
 ##entry.grid(columnspan=4, ipadx=70) 
 
-browsebutton = Button(root, text="Browse CSV file", command=browsefunc)
+browsebutton = Button(root, text="Browse CSV file", command=browse_function)
 browsebutton.pack()
 browsebutton = Button(root, text="show Absentee", command=calc)
 browsebutton.pack()
