@@ -5,7 +5,7 @@ import pandas as pd
 
 root = Tk()
 root.configure(background='light green')
-root.title('GLA Online attedance absentee(based on official Email ID)')
+root.title('GLA Online Attendance Absentees List Generator (based on official Email IDs)')
 root.geometry("500x250")
 
 
