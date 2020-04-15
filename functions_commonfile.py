@@ -232,7 +232,7 @@ def my_fun():
     def inner_global():
         global k
         k = 90
-
+    k = 0
     inner()
     print(k)  # 0
     inner_non()
@@ -240,7 +240,7 @@ def my_fun():
     inner_global()
     print(k)  # 60
 
-k = 1
+k = 1  # global scope
 my_fun()
 print(k)  # 90
 
@@ -462,8 +462,13 @@ print(lst)
 
 
 k = [('3', '0', '1') , ('7', '5', '44')]
-lst = list(map(lambda x:''.join(x), k))
+lst = list(map(lambda i:''.join(i), k))
 print(lst)
+
+
+k = '*'.join('hello')
+print(k)
+
 
 
 # lambda functions
@@ -556,12 +561,87 @@ k = ['ruchi gupta', 'rahul sharma', 'abhinav pandey', 'rishabh garg', 'saransh p
 k.sort(key=lambda x:sum(map(ord, x)))
 print(k)
 
+# map()
+# filter()
+# sort()/sorted()
+# min()
+# max()
 
-k = bytearray(b'string')
-l = bytes(22)
+
+h = [6, 18, 3, 7, 2, 5, 60, 23, 50]
+out = list(filter(lambda t: t>=10, h))
+print(out)
+
+
+h = [6, 18, 3, 7, 2, 5, 60, 23, 50]
+out = list(map(float, h))
+print(out)
+
+# argv types in function
+# pass by value and pass reference
+# immutable vs mutable
+
+
+def my_fun(h): # h = x
+    h.add(100)
+
+# mutable type
+vr = {6, 8}
+x = vr.copy()
+k = my_fun(x)
+print(vr)
+
+
+# # immutable type
+# vr = 'hello'
+# k = my_fun(vr)
+# print(vr)
 
 
 
+# min()/max()
+# sort()/sorted()
+# map
+# filter
+l = ['hello', 'Hzzz', 'Abhinav', 'rajan']
+out = min(l, key=lambda t: sum(list(map(ord, t))))
+
+from functools import reduce
+k = [1, 3, 4, 6]
+out = reduce(lambda x1, x2:x1*x2, k)
+print(out)
+
+
+# data types of arguments
+# pass by value and pass by reference
+# mutable vs immutable
+
+def my_fun(x):  # x = v
+    x.clear()
+
+
+# mutable
+v = [2, 4, 7]
+my_fun(v.copy())
+print(v)
+
+
+# immutable
+v = 'hello'
+my_fun(v)
+print(v)
+
+
+def sorted_or_not(k):
+    # logic here
+    # x = k.copy()
+    # x.sort()
+    # return x == k
+    return k == sorted(k)
+
+lst = [2, 5, 8, 0, 2, 4, 1]
+out = sorted_or_not(lst)
+print(out)
 
 
 
