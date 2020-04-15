@@ -29,7 +29,7 @@ def calc():
     for i in data:
         ls.append(main_dict.get(i))
     ls.sort()
-    pathlabel.config(text=str(ls))
+    path_label.config(text=str(ls))
 
 
 ##lastrolln = IntVar()
@@ -47,8 +47,8 @@ browse_button = Button(root, text="Browse CSV file", command=browse_function)
 browse_button.pack()
 browse_button = Button(root, text="show Absentee", command=calc)
 browse_button.pack()
-pathlabel = Label(root)
-pathlabel.pack()
+path_label = Label(root)
+path_label.pack()
 
 # running the mainloop here to test out the program
 root.mainloop()
