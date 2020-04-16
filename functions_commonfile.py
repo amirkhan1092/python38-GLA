@@ -606,6 +606,7 @@ print(vr)
 l = ['hello', 'Hzzz', 'Abhinav', 'rajan']
 out = min(l, key=lambda t: sum(list(map(ord, t))))
 
+
 from functools import reduce
 k = [1, 3, 4, 6]
 out = reduce(lambda x1, x2:x1*x2, k)
@@ -646,6 +647,124 @@ print(out)
 
 
 
+
+# map()
+# filter()
+# sort()/sorted()
+# min()
+# max()
+# reduce() need to import module functools
+
+sorted()  # built-in
+l.sort()  # method of list object
+
+h = (2, 34, 2, 1, 8)
+h.sort(reverse=True)
+print(h)
+out = sorted(h, reverse=True )
+
+
+
+h = [2, 34, 2, 1, 8, 4, 3, 5]
+out = sorted(h, key=lambda x:x%2)
+print(out)
+
+
+
+
+# min()/max()
+k = [2, 4, 4, 32, 9]
+o1 = min(k) # 2
+o2 = max(k) # 32
+
+
+# min/max
+# example 1 : default sort
+k = ['hello', 'abhinav', 'ravi', 'venky']
+o1 = min(k)  # 'abhinav'
+o2 = max(k)  # 'venky'
+
+# example 2 # based on length
+k = ['hello', 'abhinav', 'ravi', 'venky']
+o1 = min(k, key=len)  # 'ravi'
+o2 = max(k, key=len)  # 'abhinav'
+
+# example 3 # ascii-weight
+k = ['hellozz', 'abhinav', 'ravi', 'venky']
+o1 = min(k,key=lambda x:sum(map(ord, x)))
+o2 = max(k, key=lambda x:sum(map(ord, x)))
+print(o1)  # 'ravi'
+print(o2) # 'hellozz'
+
+import functools
+k = [1, 3, 5, 6, 2]
+out = functools.reduce(lambda x1, x2: x1*3/x2, k)
+print(out)  # 180
+
+# data types of argument
+# pass by value and pass by reference
+# mutable vs immutable
+
+
+
+
+#  lambda function/ lambda expression
+
+# def my_fun(a, b):
+#     return a**2+b**2
+
+my_fun = lambda a, b:a**2+b**2
+out = my_fun(2, 4)
+print(out)  # 20
+
+
+# map()
+# filter()
+# sort()/sorted()
+# min()/max()
+# reduce()
+
+# map()
+# example 1
+k = [1, 3, 4, 2, 4, 8, 23, 20]
+out = list(map(float, k))
+print(out)
+# [1, 3, 4, 2, 4, 8, 23, 20]
+# [1.0, 3.0, 4.0, 2.0, 4.0, 8.0, 23.0, 20.0]
+
+# example 2 # square of list elements using map and lambda
+k = [1, 3, 4, 2, 4, 8, 23, 20]
+out = list(map(lambda x:x**2, k))
+print(out) #[1, 9, 16, 4, 16, 64, 529, 400]
+
+# example 3 square of selected items
+k = [1, 3, 4, 2, 4, 8, 23, 20]
+out = list(map(lambda x:x if x % 2 == 0 else x**2, k))
+print(out)  # [1, 9, 4, 2, 4, 8, 529, 20]
+
+
+# filter
+# example 1 # filter the odd value
+def my_fun(x):
+    if x % 2 == 0:
+        return False
+    else:
+        re
+k = [1, 3, 4, 2, 4, 8, 23, 20]
+out = filter(my_fun, k)
+
+
+
+# function to remove the odd values in a list
+def my_fun(ls): # ls = mlist
+    # logic
+    return [i for i in ls if i%2 == 0]
+
+
+mlist = [1, 3, 5, 7, 8, 3, 2, 5, 98, 77675575577575757575, \
+         686868]
+out = my_fun(mlist)
+print(out)
 
 
 
