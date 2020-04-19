@@ -33,10 +33,12 @@ Anonymous Functions( Lambda Function),
 Scope of Variable: global, local and nonlocal 
 [( click here for pdf )](http://amirkhan1092.c1.biz/function.pdf),
 [(MCQ Function)](http://amirkhan1092.c1.biz/function_mcq.pdf)
-[(Examples with Python File)](https://github.com/amirkhan1092/python38-GLA/blob/master/functions_commonfile.py)
+[(Examples Code File)](https://github.com/amirkhan1092/python38-GLA/blob/master/functions_commonfile.py)
 
 
-Recursion in Python 
+Recursion in Python [PDF (Click Here)](http://amirkhan1092.c1.biz/recursion.pdf) 
+, [MCQ](http://amirkhan1092.c1.biz/recursion_mcq.pdf)
+, [Examples Code File](https://github.com/amirkhan1092/python38-GLA/blob/master/recursion_file.py)
 
 Modules in Python: 
 random, 

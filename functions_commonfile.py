@@ -755,18 +755,94 @@ out = filter(my_fun, k)
 
 
 
-# function to remove the odd values in a list
-def my_fun(ls): # ls = mlist
-    # logic
-    return [i for i in ls if i%2 == 0]
+
+# call by value: valid for Python
+# call by reference
+
+def my_fun(x): # x = v
+    x.clear()
+
+# mutable
+v = [3, 4, 7]
+my_fun(v)
+print(v)
+
+# immutable
+v = 'hello'
+my_fun(v)
+print(v)  # 'hello'
 
 
-mlist = [1, 3, 5, 7, 8, 3, 2, 5, 98, 77675575577575757575, \
-         686868]
-out = my_fun(mlist)
-print(out)
 
 
-a = 10
-b = 30
-print(a + b)
+
+def my_fun(t, ls=[]):  # ls = [100, 101, 111]
+    for i in range(t):
+        ls.append(i*i)
+    return ls
+
+print(my_fun(2)) # [0, 1]
+print(my_fun(3, [100, 101, 111]))  # [100, 101, 111, 0, 1, 4]
+print(my_fun(4)) # [0, 1, 0, 1, 4, 9]
+
+
+
+# filter: filter odd values
+d = [22, 4, 7, 1, 7, 8, 34]
+k = list(filter(lambda x: x%2==0, d))
+print(k)
+
+
+
+# sort()
+# example 1 simple sorting default
+d = [22, 4, 7, 1, 7, 8, 34]
+d.sort()
+print(d)
+
+# Example 2 with string
+d = ['hello', 'anant', 'ravi', 'xyz']
+d.sort()
+print(d)  # ['anant'...]
+
+# example 3 custom sorting
+d = ['hello world', 'anant', 'ravi', 'xyz', 'Hi']
+d.sort(key=len)
+print(d)  # ['Hi', 'xyz', 'ravi', 'anant', 'hello world']
+
+
+# example 4 ASCII weight
+d = ['hello world', 'anant', 'ravi', 'xyz', 'Hi']
+d.sort(key= lambda x:sum(map(ord, x)))
+print(d)
+
+# Data type of arguments
+# call by value and call by reference : call by value is only valid in python
+# mutable vs immutable
+def my_fun(x): # x = v
+    x.clear()
+
+# mutable
+v = [3, 4, 6]
+my_fun(v)
+print(v)  # []
+
+
+# immutable
+v = 'hello'
+my_fun(v)
+print(v)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
