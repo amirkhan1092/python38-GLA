@@ -834,23 +834,18 @@ my_fun(v)
 print(v)
 
 
+# reduce()
 
 from functools import reduce
 
-fib = lambda n: reduce(lambda x, _: x+[x[-1]+x[-2]], range(n-2), [0, 1])
-
-print(fib(6))
-
-def apna(x1, x2):
-    print(x1,'-:-', x2)
+# example 1
+lst = [1, 3, 5, 6, 8]
+out = reduce(lambda x1, x2:x1*x2 , lst, 10)
+print(out)
 
 
-print(reduce(apna, [12, 4,1], 5))
-
-
-
-
-
-
+# fibonacci series using lambda
+fibo = lambda n: reduce(lambda x1, x2: x1+[x1[-1]+x1[-2]], range(n-2), [0, 1])
+re = fibo(4)
 
 
