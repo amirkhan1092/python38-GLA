@@ -74,32 +74,6 @@ def gcd(x1, x2):
 print(gcd(10, 12))
 
 
-# Example 4: reverse string
-
-def reverse(x):
-    s = ''
-    for i in range(len(x) - 1, -1, -1):
-        s += x[i]
-    return s
-
-
-st = 'hello python'
-out = reverse(st)
-print(out)
-
-
-def traverse(x):  # x = x[1:]
-    if x == '':
-        return
-    print(x[0])
-    traverse(x[1:])
-
-
-traverse('hello python')
-
-min_square(5, 2)
-
-
 # example 3
 # GCD
 def gcd(x, y):
