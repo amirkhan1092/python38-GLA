@@ -124,84 +124,28 @@ print(out)
 # print(out)  # [[2, 100], 2, 1, 66, {9}]
 # print(lst)  # [[2], 2, 1, 66, {9}]
 
-
-def my_fun():
-    print('this is my function')
-
-
-b = 'hell'
-h = f'result is {b}'
-print(format(123, 'd'))
-
-
-def my_fun():
-    a = 100
-    print('hello')
-    my_fun()
-
-
-a = 100
-my_fun()
-
-
-# example 1 : countdown
-def countdown(x):  # x = 4
-    if x == 0:
-        return 'stop'
-    print(x)
-    countdown(x - 1)
-
-
-countdown(2)
-print('happy recursion day')
-
-
-def squar_min(r, w, c=0):
-    '''
-    user define function that return integer of minimum sqr
-    '''
-    if r > w:
-        c += 1
-        return squar_min(r - w, w, c)
-    elif w > r:
-        c += 1
-        return squar_min(w - r, r, c)
-    else:
-        return c + 1
-
-
-out = squar_min.__doc__
-print(out)
-
-
-# example 3: GCD
-def gcd(x1, x2):
-    if x1 > x2:
-        return gcd(x1 - x2, x2)
-    elif x2 > x1:
-        return gcd(x1, x2 - x1)
-    else:
-        return x1
-
-
-print(gcd(45, 15))
-
-
-# example 4: traverse string with recursion
-
-def my_fun(x):  # x = 'ello world'
-    if x == '':
-        return 'stop'
-    print(x[0])  # 'e'
-    my_fun(x[1:])
-
-
-st = 'hello world'
-my_fun(st)
+#
+# def my_fun():
+#     print('this is my function')
+#
+#
+# b = 'hell'
+# h = f'result is {b}'
+# print(format(123, 'd'))
+#
+#
+# def my_fun():
+#     a = 100
+#     print('hello')
+#     my_fun()
+#
+#
+# a = 100
+# my_fun()
 
 
 # example 5: reverse string with recursive function
-def my_fun(x):  # x = 'ello world'
+def my_fun(x):  # x = 'ell world'
     if x == '':
         return ''
     return my_fun(x[1:]) + x[0]
