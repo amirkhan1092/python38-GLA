@@ -105,24 +105,24 @@ out = min_sqr(5, 2)
 print(out)
 
 
-
-lst = (i for i in range(10))
-next(lst)
-# shallow copy
-lst = [2, 2, 1, 66, 9]
-out = lst.copy()
-lst.clear()
-print(out)  # [2, 2, 1, 66, 9]
-print(lst)  # []
-
-# deep copy
-import copy
-
-lst = [[2], 2, 1, 66, {9}]
-out = copy.deepcopy(lst)
-out[0].append(100)
-print(out)  # [[2, 100], 2, 1, 66, {9}]
-print(lst)  # [[2], 2, 1, 66, {9}]
+#
+# lst = (i for i in range(10))
+# next(lst)
+# # shallow copy
+# lst = [2, 2, 1, 66, 9]
+# out = lst.copy()
+# lst.clear()
+# print(out)  # [2, 2, 1, 66, 9]
+# print(lst)  # []
+#
+# # deep copy
+# import copy
+#
+# lst = [[2], 2, 1, 66, {9}]
+# out = copy.deepcopy(lst)
+# out[0].append(100)
+# print(out)  # [[2, 100], 2, 1, 66, {9}]
+# print(lst)  # [[2], 2, 1, 66, {9}]
 
 
 def my_fun():
