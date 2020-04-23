@@ -33,99 +33,8 @@ out2 = 0.011011362075805664
 print(out1 - out2)
 
 
-def fact(n):
-    p = 1
-    if n == 0:
-        return 1
-    else:
-        p = n * fact(n - 1)
-
-
-num = int(input('enter the number '))
-out = fact(0)
-print('factorial of given number is ', out)
-
-
-def MinSqr(r, c, k=0):
-    # if r > c:
-    #     k += 1
-    #     return MinSqr(r - c, c, k)
-    # elif r < c:
-    #     k += 1
-    #     return MinSqr(c - r, r, k)
-    # elif r == c:
-    #     return k + 1
-    k = 1
-    while r != c:
-        if r > c:
-            r = r - c
-        elif r < c:
-            r, c = c - r, r
-        k += 1
-    return k
-
-
-t1 = time.time()
-print(MinSqr(5, 2))
-t2 = time.time()
-print(t2 - t1)
-
-import time
-import math
-
-
-# GCD
-
-def gcd(a, b):
-    if a < b:
-        return gcd(a, b - a)
-    elif b < a:
-        return gcd(a - b, b)
-    else:
-        return a
-
-
-# t1 = time.time()
-print(gcd(10, 13))
-print(math.gcd(100000000000, 1900009))
-t2 = time.time()
-
-print(t2 - t1)
-
-
 # example 1: countdown
-def countdown(x):  # x = 4
-    if x == 0:
-        return 'stop'
-    print(x)
-    countdown(x - 1)
-
-
-countdown(5)
-print('happy recursion day')
-
-
-# example 2: factorial
-def fact(x):  # x = 0
-    p = 1
-    if x > 0:
-        return p
-    else:
-        p = x * fact(x - 1)
-    return 1
-
-
-# p = 1
-# x = 5
-# p = 5*4*3*2*1*1
-
-num = int(input('enter the number '))
-out = fact(num)  # 5
-print('factorial of given value', out)
-
-
-# example 1: Countdown
-def countdown(x):  # x = 4
+def countdown(x):  # x = 5
     if x == 0:
         return 'stop'
     print(x)
@@ -138,18 +47,20 @@ print('happy recursion day')
 
 # example 2: factorial
 def fact(x):
-    if x == 0:
+    if x == 0:  # Base case
         return 1
     return x * fact(x - 1)
 
 
+# p = 1
+# x = 5
+# p = 5*4*3*2*1*1
 num = int(input('enter the number '))
-out = fact(5)
-print('factorial of given value is ', out)
+out = fact(num)  # 5
+print('factorial of given value', out)
 
 
 # example 3: GCD or HCF
-
 def gcd(x1, x2):
     # logic here with recursion
     if x1 > x2:
