@@ -162,4 +162,13 @@ st = 'hello world'
 out = my_fun(st)
 print(out)
 
-# example 6:
+
+# example 6 : natural sum at given positive integer
+
+def natural_sum(num1):
+    if num1 == 1:  # base case termination of recursion
+        return 1
+    return num1 + natural_sum(num1 - 1)
+
+
+print(natural_sum(int(input('enter the positive integer '))))
