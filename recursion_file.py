@@ -89,38 +89,7 @@ def gcd(x, y):
 print(gcd(10, 12))
 
 
-# example 4: traverse the string elements
-def my_fun(x):  # x = 'hello world'
-    if x == '':
-        return 'stop'
-    print(x[0])
-    my_fun(x[1:])
-
-
-st = 'hello world'
-out = my_fun(st)
-print(out)
-
-
-# example 5 : reverse string using recursion
-def my_fun(x):
-    if x == '':
-        return ''
-    return my_fun(x[1:]) + x[0]
-
-
-# my_fun('ello python') + 'h'
-# my_fun('llo python') + 'e' + 'h'
-# my_fun('lo python') + 'l' + 'e' + 'h'
-#
-# '' + 'd' ........ + 'l' + 'e' + 'h'
-
-st = 'hello world'
-out = my_fun(st)
-print(out)
-
-
-# example ....min square in rectangle
+# example4 ....min square in rectangle at given sides (simple format only sides is considering )
 def min_sqr(r, w, c=0):
     if r > w:
         c += 1
@@ -134,6 +103,8 @@ def min_sqr(r, w, c=0):
 
 out = min_sqr(5, 2)
 print(out)
+
+
 
 lst = (i for i in range(10))
 next(lst)
