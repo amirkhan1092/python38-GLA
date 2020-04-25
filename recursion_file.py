@@ -204,6 +204,18 @@ out = fact(n)
 print('factorial of given value ', out)
 
 
+# Example  3  string traverse
+def my_fun(st):  # st = 'hello python'
+    if st == '':
+        return 'stop'
+    print(st[0])  # h
+    my_fun(st[1:])  # ''
+
+v = 'hello python'
+my_fun(v)
+
+
+
 
 
 
