@@ -164,7 +164,6 @@ print(out)
 
 
 # example 6 : natural sum at given positive integer
-
 def natural_sum(num1):
     if num1 == 1:  # base case termination of recursion
         return 1
@@ -172,3 +171,46 @@ def natural_sum(num1):
 
 
 print(natural_sum(int(input('enter the positive integer '))))
+
+
+# recursion example
+
+# Example1 countdown
+
+def countdown(num): # num = 4
+    if num == 0:  # base case
+        return 'stop'
+    print(num)
+    countdown(num-1)
+
+countdown(5)
+print('happy recursion day ')
+
+# Example2 factorial
+def fact(num):
+    if num == 0:
+        return 1
+    return num*fact(num-1)
+
+# num = 5
+# 5*fact(4)
+# 5*4*fact(3)
+# 5*4*3*fact(2)
+# 5*4*3*2*fact(1)
+# 5*4*3*2*1*fact(0)
+
+n = int(input('enter the positive integer number '))
+out = fact(n)
+print('factorial of given value ', out)
+
+
+
+
+
+
+
+
+
+
+
+
