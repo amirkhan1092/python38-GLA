@@ -173,78 +173,13 @@ def natural_sum(num1):
 print(natural_sum(int(input('enter the positive integer '))))
 
 
-# recursion example
-
-# Example1 countdown
-
-def countdown(num): # num = 4
-    if num == 0:  # base case
+# Example  7  string elements traverse
+def my_fun(st1):  # st = 'lo python'
+    if st1 == '':
         return 'stop'
-    print(num)
-    countdown(num-1)
+    print(st1[0])  # h
+    my_fun(st1[1:])  # ''
 
-countdown(5)
-print('happy recursion day ')
-
-# Example2 factorial
-def fact(num):
-
-    if num == 0:
-        return 1
-    return num*fact(num-1)
-
-
-# num = 5
-# 5*fact(4)
-# 5*4*fact(3)
-# 5*4*3*fact(2)
-# 5*4*3*2*fact(1)
-# 5*4*3*2*1*fact(0)
-
-n = int(input('enter the positive integer number '))
-out = fact(n)
-print('factorial of given value ', out)
-
-
-# Example  3  string traverse
-def my_fun(st):  # st = 'ello python'
-    if st == '':
-        return 'stop'
-    print(st[0])  # h
-    my_fun(st[1:])  # ''
 
 v = 'hello python'
 my_fun(v)
-
-
-
-# Example 4 reverse the elements of string using recursion
-def my_fun(st):  # st = 'hello python'
-    if st == '':
-        return ''
-    return my_fun(st[1:]) + st[0]
-#
-# st = 'hello python'
-# my_fun('hello python')
-# my_fun('ello python ') +'h'
-# my_fun('llo python') + 'e' + 'h'
-# my_fun('') + 'n'...........+'e'+ 'h'
-
-v = 'hello python'
-out = my_fun(v)
-print(out)
-
-# example 5 natural sum of positive integer
-def natural_sum(num):
-    if num == 0:
-        return 0
-    return num + natural_sum(num-1)
-
-n = int(input('enter the natural number '))
-out = natural_sum(n)
-print(out)
-
-
-
-
-
