@@ -188,9 +188,11 @@ print('happy recursion day ')
 
 # Example2 factorial
 def fact(num):
+
     if num == 0:
         return 1
     return num*fact(num-1)
+
 
 # num = 5
 # 5*fact(4)
@@ -205,7 +207,7 @@ print('factorial of given value ', out)
 
 
 # Example  3  string traverse
-def my_fun(st):  # st = 'hello python'
+def my_fun(st):  # st = 'ello python'
     if st == '':
         return 'stop'
     print(st[0])  # h
@@ -216,11 +218,31 @@ my_fun(v)
 
 
 
+# Example 4 reverse the elements of string using recursion
+def my_fun(st):  # st = 'hello python'
+    if st == '':
+        return ''
+    return my_fun(st[1:]) + st[0]
+#
+# st = 'hello python'
+# my_fun('hello python')
+# my_fun('ello python ') +'h'
+# my_fun('llo python') + 'e' + 'h'
+# my_fun('') + 'n'...........+'e'+ 'h'
 
+v = 'hello python'
+out = my_fun(v)
+print(out)
 
+# example 5 natural sum of positive integer
+def natural_sum(num):
+    if num == 0:
+        return 0
+    return num + natural_sum(num-1)
 
-
-
+n = int(input('enter the natural number '))
+out = natural_sum(n)
+print(out)
 
 
 
