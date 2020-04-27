@@ -5,6 +5,64 @@
 
 
 
+
+import random
+
+# random(): generate the random float value between 0 and 1.0
+out = random.random()
+print(out)
+
+# randrange() : return a integer value with given range
+out = random.randrange(1, 20, 19)
+print(out)
+
+# randint: return a integer value with given range
+out = random.randint(1, 20)
+print(out)
+
+# example number guessing
+num_2 = random.randint(1, 100)
+count = 0
+while 1:
+    count += 1
+    num = int(input('enter the positive integer value between 1 and 100'))
+    if num > num_2:
+        print('too large')
+    elif num < num_2:
+        print('too small')
+    else:
+        print('right number with count score ', count)
+        break
+
+
+
+# choice : return single element with selected items
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out = random.choice(lst)
+print(out)
+
+
+# true number call
+lst = list(range(1, 64))
+while lst:
+    input('please enter for next ')
+    out = random.choice(lst)
+    print(out)
+
+    lst.remove(out)
+
+print('all done ')
+
+
+
+
+
+
+
+
+
+
+
 # random() : generate the random value between 0.0 and 1.0
 import random
 
