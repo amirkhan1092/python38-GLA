@@ -5,6 +5,31 @@
 
 
 
+import random
+
+# random()  # generate the float number between 0 and 1.0
+
+out = int(random.random()*10**6)
+print(out)
+
+hs = {2, 4, 6}
+hr = {3, 7, 2, 4, 6}
+
+out = hs.difference(hr)
+print(out)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import random
 
