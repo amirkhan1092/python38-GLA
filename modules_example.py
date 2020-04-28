@@ -3,25 +3,73 @@
 # random
 # math
 
-
-
 import random
 
-# random()  # generate the float number between 0 and 1.0
-
-out = int(random.random()*10**6)
-print(out)
-
-hs = {2, 4, 6}
-hr = {3, 7, 2, 4, 6}
-
-out = hs.difference(hr)
+# 1 random()  # generate the float number between 0 and 1.0
+out = random.random()
 print(out)
 
 
+# example otp 6 digit
+out = str(random.random())
+print(out[-6:])
+
+# randrange() :
+out = random.randrange(1, 100, 2)  # 1, 6
+print(out)
 
 
+# randint:
+out = random.randint(1, 10)
+print(out)
 
+
+# example : guess the number
+
+sys_num = random.randint(1, 100)
+count = 0
+while 1:
+    count += 1
+    num = int(input('enter the number between 1 and 100'))
+    if num > sys_num:
+        print('too large')
+    elif num < sys_num:
+        print('too small')
+    else:
+        print('right number with score count ', count)
+        break
+
+
+# choice
+
+lst =  ['himanshu', 'deepak', 'karan', 'pawan']
+out = random.choice(lst)
+print(out)
+
+
+lst  = [1, 2, 3, 4, 5, 6]
+while 1:
+    input('enter the for the next ')
+    out = random.choice(lst)
+    print(out)
+
+random.shuffle(lst)
+print(lst)
+
+
+# def my_fun(fun1):
+#     def wrapper():
+#         print('hello')
+#         fun1()
+#         print('welcome')
+#     return wrapper
+# def second():
+#     print('this is second')
+#
+#
+# a = my_fun(second)
+# a()
+#
 
 
 
@@ -138,3 +186,37 @@ while lst:
     input('enter for next person ')
     print(r.choice(lst))
 
+
+
+# choices : return list
+
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out = random.choices(lst, weights=[10, 1, 2, 3, 4], k=10)
+print(out)
+
+# shuffle
+import random
+def my_fun(ls):
+    k = ls.copy()
+    ls.clear()
+    while k:
+        x = random.choice(k)
+        ls.append(x)
+        k.remove(x)
+
+
+
+
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+print(lst)
+my_fun(lst)
+print(lst)
+
+
+# seed()
+random.seed(101)
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+
+k = random.choice(lst)
+
+print(k)
