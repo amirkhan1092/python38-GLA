@@ -63,7 +63,12 @@ ab+
 
 
 # w+ read and write
+f = open('xyz.dat', 'w+')
 
+
+data = f.read()
+print(data)
+f.close()
 
 
 

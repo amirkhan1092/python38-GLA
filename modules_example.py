@@ -69,21 +69,47 @@ print(lst)  # before shuffle
 random.shuffle(lst)
 print(lst)  # after shuffle
 
-
-
-# seed()
-random.seed(10)
-
-
-
-
-
-
-
+# example shuffle the list without shuffle method
 lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+new_lst = lst.copy()
+lst.clear()
+while new_lst:
+    tt = random.choice(new_lst)
+    lst.append(tt)
+    new_lst.remove(tt)
+print(lst)
 
+
+
+
+
+# 8 seed()
+random.seed(110)
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
 out1 = random.choice(lst)
 print(out1)
+
+
+
+# 9 getrandbits
+import random
+out = random.getrandbits(2)
+print(out)
+
+
+
+# 10 uniform
+
+out = random.uniform(1, 2)
+print(out)
+
+# 11 triangular
+out = random.triangular(10, 30, 50)
+print(out)
+
+
+
+
 
 
 # getrandbits()
@@ -155,10 +181,27 @@ print(out)
 
 
 
+import math
 
+out = math.ceil(12.5)
+print(out)
 
+out = math.floor(12.5)
+print(out)
 
+import time
+out = time.time()
+print(out)
 
+out = time.asctime()
+print(out)
+
+# st1 = 'ACB'
+# st2 = 'ABC'
+# st1 = st1.lower()
+# st2 = st2.lower()
+#
+# print(st2 in st1)
 
 
 
@@ -311,6 +354,6 @@ print(time.asctime())
 
 
 
-# Topic : file handling
+
 
 
