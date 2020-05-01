@@ -3,6 +3,112 @@
 # random
 # math
 
+# random
+
+import random
+
+# 1. random() : to generate the random value between 0 and 1
+out = random.random()
+print(out)
+
+
+# Example OTP using random
+d = int(input('enter width of OTP '))
+out = str(random.random())[-d:]
+print(out)
+
+
+# 2. randrange()  : return integer with given range
+out = random.randrange(1, 20, 5)
+print(out)
+
+
+
+# 3. randint() : return integer with given range no manual step size
+out = random.randint(1, 20)
+print(out)
+print(random.randint(1, 20))
+
+
+# 4. choice() : return element from selected items
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+out = random.choice(lst)
+print(out)
+
+
+# number guess
+
+sys = random.randint(1, 100)
+count = 0
+while 1:
+    count += 1
+    num = int(input('enter the number between 1 and 100 '))
+    if sys > num:
+        print('too small ')
+    elif sys < num:
+        print('too large')
+    else:
+        print('right number with score count ', count)
+        break
+
+
+# 5 choices : return list of choice from selected
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+out = random.choices(lst, weights=[10, 1, 5, 6, 6, 1], k=10)
+print(out)
+
+# 6 sample : return list of items from selected
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+out = random.sample(lst, k=3)
+print(out)
+
+
+# 7 shuffle: to shuffle the list
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+print(lst)  # before shuffle
+random.shuffle(lst)
+print(lst)  # after shuffle
+
+
+
+# seed()
+random.seed(10)
+
+
+
+
+
+
+
+lst = ['abhishek', 'arpit', 'ghanshyam', 'aman', 'archit', 'chetan']
+
+out1 = random.choice(lst)
+print(out1)
+
+
+# getrandbits()
+
+out = random.getrandbits(3)
+print(out)
+
+
+
+print(random.triangular(10, 20, 18))
+
+import math
+l = math.floor(12.91)
+print(l)
+
+
+import time
+print(time.asctime())
+
+
+
+
+
+
+
 import random
 
 # 1 random()  # generate the float number between 0 and 1.0
@@ -14,13 +120,13 @@ print(out)
 out = str(random.random())
 print(out[-6:])
 
-# randrange() :
+# 2 randrange() : return integer with given range
 out = random.randrange(1, 100, 2)  # 1, 6
 print(out)
 
 
-# randint:
-out = random.randint(1, 10)
+# 3 randint: return integer with given range
+out = random.randint(1, 100)
 print(out)
 
 
@@ -40,21 +146,21 @@ while 1:
         break
 
 
-# choice
+from math import *
+a = int(input('enter the value '))
 
-lst =  ['himanshu', 'deepak', 'karan', 'pawan']
-out = random.choice(lst)
+out = int(log(a, 256)) + 1
 print(out)
 
 
-lst  = [1, 2, 3, 4, 5, 6]
-while 1:
-    input('enter the for the next ')
-    out = random.choice(lst)
-    print(out)
 
-random.shuffle(lst)
-print(lst)
+
+
+
+
+
+
+
 
 
 # def my_fun(fun1):
@@ -109,114 +215,102 @@ while 1:
 
 
 
-# choice : return single element with selected items
+# 3 choice : return single element with selected items
+import random
 lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
 out = random.choice(lst)
 print(out)
 
 
-# true number call
-lst = list(range(1, 64))
-while lst:
-    input('please enter for next ')
-    out = random.choice(lst)
-    print(out)
-
-    lst.remove(out)
-
-print('all done ')
-
-
-
-
-
-
-
-
-
-
-
-# random() : generate the random value between 0.0 and 1.0
+# 4 choices : return list of items
 import random
-
-out = random.random()
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out = random.choices(lst, weights=[1, 10, 3, 8, 2], k=5)
 print(out)
 
-# randrange() : random number with range
+
+# 5 sample
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out = random.sample(lst, k=4)
+print(out)
+
+# 6 shuffle: to shuffle the list
 import random
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+print(lst)  # before shuffle
+random.shuffle(lst)
+print(lst)  # after shuffle
 
-out = random.randrange(0, 10, 5)
-print(out)
 
-# randint(): random integer number with range
-
+# shuffle the list without shuffle method in random
 import random
+def my_fun(ls):
+    tc = ls.copy()
+    ls.clear()
+    while tc:
+        y = random.choice(tc)
+        ls.append(y)
+        tc.remove(y)
 
-out = random.randint(0, 10)
-print(out)
-
-# otp 6 digit
-import random
-
-out = int(random.random() * 10 ** 6)
-print(out)
-
-# choice()
-h = [1, 3, 6, 3, 7, 9, 3, 6, 'hello']
-out = random.choice(h)
-print(out)
-
-# game : number guess
-import random as r
-count = 0
-sys_num = r.randint(0, 100)
-while 1:
-    count += 1
-    num = int(input('enter the positive integer between 1 to 100'))
-    if num < sys_num:
-        print('user guessed number is lower ')
-    elif num > sys_num:
-        print('user guessed higher value ')
-    else:
-        print('right number with score count ', count)
-        break
-
-lst = list(range(1, 56))
-while lst:
-    input('enter for next person ')
-    print(r.choice(lst))
-
-
-
-# choices : return list
 
 lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
-out = random.choices(lst, weights=[10, 1, 2, 3, 4], k=10)
+print(lst)  # before shuffle
+my_fun(lst)
+print(lst)  # after shuffle
+
+
+# 7 seed()
+import random
+random.seed(20)
+
+
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out1 = random.choice(lst)
+print(out1)
+
+
+# sample
+lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
+out = random.sample(lst, k=5)
 print(out)
 
 # shuffle
-import random
-def my_fun(ls):
-    k = ls.copy()
-    ls.clear()
-    while k:
-        x = random.choice(k)
-        ls.append(x)
-        k.remove(x)
-
-
-
-
 lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
-print(lst)
-my_fun(lst)
+random.shuffle(lst)
 print(lst)
 
+# 8 getrandbits
+ut = random.getrandbits(8)
+print(ut)
 
-# seed()
-random.seed(101)
-lst = ['chanchal',  'bhavya', 'dheeraj', 'alok', 'lakshay']
 
-k = random.choice(lst)
+#
+print(random.triangular(1, 20, 15))
 
-print(k)
+print(random.uniform(1, 2))
+
+
+# math
+import math
+print(math.pi)
+
+print(math.floor(23.99))
+print(math.ceil(23.0))
+
+import time
+out = time.time()
+print(out)
+
+print(time.asctime())
+
+# file handling
+# exception handling
+
+
+
+
+
+
+# Topic : file handling
+
+
