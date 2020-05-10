@@ -51,7 +51,7 @@ Regular Expression: Match, Search and find
 
 File Handling: Reading and writing operation with local file.
 
-Exception Handling(click here for PDF)
+Exception Handling [(click here for file)](https://github.com/amirkhan1092/python38-GLA/blob/master/exception_handlingExample.py)
 
 
 # Sample paper for Mid-term Examination  
