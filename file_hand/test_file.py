@@ -216,6 +216,92 @@ f.write(b'30  ')
 f.close()
 
     
+
+
+
+# create file with student information
+
+##f = open('info.dat', 'w')
+##lst = ['Riya Sharma\n', 'Section O\n', 'Roll Number 20\n', 'address GLA']
+##if not f.closed:
+##    print('file succesfully opened ', f.name)
+##    f.writelines(lst)
+##    f.close()
+##    if f.closed:
+##        print('file succesfully saved', f.name)
+##else:
+##    print('file not opened ')
+
+
+
+
+
+
+##f = open('info.dat', 'rb')
+##
+##data = f.readline()
+##
+##print(data)
+##f.close()
+
+
+
+
+##f = open('info.dat', 'rb')
+##
+##data1 = next(f)
+##data2 = next(f)
+##data3 = next(f)
+##data4 = next(f)
+##data5 = next(f)  # error EOF
+####next(f)
+##
+##print(data1)
+##print(data4)
+##
+##
+##f.close()
+
+
+
+##f = open('info.dat', 'rb')
+##
+##for line in f:
+##    h = next(f)
+##    print(line)
+##
+##
+##f.close()
+
+
+
+
+
+##with open('info.dat', 'r') as f:
+##    print(len(f.read().split()))
+
+
+# append mode
+# edit mode r+/w+
+
+##f = open('info2.dat', 'a')
+##print(f.tell())
+##f.write('section O ')
+##
+##
+##f.close()
+
+
+# r+/w+
+
+f1 = open('info.dat', 'a+')
+f1.seek(0)
+print(f1.read())
+
+f1.close()
+
+
+
        
     
 
