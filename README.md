@@ -57,6 +57,7 @@ Exception Handling [(click here for file)](https://github.com/amirkhan1092/pytho
 Revise Topics Syllabus Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Important_topics_concepts.pdf)
 
 Practice Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/PYTHON_questionset.pdf)
+
 Practice Questions set wise [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Python questions.pdf)
 
 
