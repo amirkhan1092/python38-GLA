@@ -58,7 +58,7 @@ Revise Topics Syllabus Questions [(click here)](https://github.com/amirkhan1092/
 
 Practice Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/PYTHON_questionset.pdf)
 
-Practice Questions set wise [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Python questions.pdf)
+Practice Questions set wise [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Python%20questions.pdf)
 
 
 # Sample paper for Mid-term Examination  
