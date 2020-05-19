@@ -54,6 +54,8 @@ File Handling: Reading and writing operation with local file.
 Exception Handling [(click here for file)](https://github.com/amirkhan1092/python38-GLA/blob/master/exception_handlingExample.py)
 
 
+Revise Topics Syllabus Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Important_topics_concepts.pdf)
+
 # Sample paper for Mid-term Examination  
 Sample paper1 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper1.pdf)           
 Sample paper2 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper2.pdf)
