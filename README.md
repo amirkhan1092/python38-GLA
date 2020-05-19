@@ -56,6 +56,10 @@ Exception Handling [(click here for file)](https://github.com/amirkhan1092/pytho
 
 Revise Topics Syllabus Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Important_topics_concepts.pdf)
 
+Practice Questions [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/PYTHON_questionset.pdf)
+Practice Questions set wise [(click here)](https://github.com/amirkhan1092/python38-GLA/blob/master/Python questions.pdf)
+
+
 # Sample paper for Mid-term Examination  
 Sample paper1 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper1.pdf)           
 Sample paper2 [(click here to download)](http://amirkhan1092.c1.biz/sample-paper2.pdf)
