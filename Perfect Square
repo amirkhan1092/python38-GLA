@@ -1,0 +1,10 @@
+# Check for perfect square
+def is_perfect_sqaure(n):
+    root = n ** 0.5
+    int_root = int(root)
+    return int_root ** 2 == n
+
+# Function Call
+n = int(input("enter any number"))
+print(is_perfect_sqaure(n))
+
